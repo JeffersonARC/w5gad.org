@@ -3,13 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>What's Happening • W5GAD</title>
-  <meta name="description" content="Jefferson Amateur Radio Club static site for W5GAD.">
-  <meta name="theme-color" content="#0a5c63">
+  <title>Events • Jefferson ARC</title>
+  <meta name="description" content="Events and calendar for Jefferson Amateur Radio Club in Metairie, Louisiana.">
+  <meta name="theme-color" content="#0b5d63">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="top-strip">
+    <div class="container">
+      <span>See the current public calendar for meetings, activities, and upcoming events.</span>
+    </div>
+  </div>
+
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="./index.html" aria-label="Jefferson Amateur Radio Club home">
@@ -17,12 +24,14 @@
           <circle cx="60" cy="60" r="52" fill="none" stroke="currentColor" stroke-width="8"></circle>
           <path d="M29 73l18-34 13 25 13-25 18 34" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></path>
         </svg>
-        <span>
+        <span class="brand-copy">
           <strong>Jefferson Amateur Radio Club</strong>
-          <small>W5GAD</small>
+          <span>W5GAD</span>
         </span>
       </a>
+
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+
       <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
         <a href="./index.html">Home</a>
         <a href="./whatshappening.html" aria-current="page">What's Happening</a>
@@ -33,47 +42,143 @@
       </nav>
     </div>
   </header>
+
   <main id="main">
-    <section class="page-hero">
-      <div class="container page-hero-grid">
-        <div>
-          <p class="eyebrow">Events and schedules</p>
-          <h1>What's Happening</h1>
-          <p class="lede">This page keeps the embedded public Google Calendar and gives you a simple place to add notes about meetings, nets, and special events.</p>
-        </div>
-        <aside class="hero-card">
-          <h2>W5GAD</h2>
-          <p class="muted">Traditional static site starter with separate pages, shared styles, and deployment-ready Docker files.</p>
+    <section class="page-intro">
+      <div class="container">
+        <p class="kicker">What's Happening</p>
+        <h1>Events</h1>
+        <p>
+          Throughout the year, novices and experts benefit from participating in many fun and
+          informative events and activities. The new static design keeps this page centered around
+          the same event-oriented content as the live site.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container three-col">
+        <article class="palette-card teal">
+          <h2>Technical talks</h2>
+          <p>Monthly talks and presentations for members and visitors interested in amateur radio topics.</p>
+        </article>
+
+        <article class="palette-card gold">
+          <h2>Hands-on workshops</h2>
+          <p>Workshops on new services, antennas, and other practical operating and station projects.</p>
+        </article>
+
+        <article class="palette-card rust">
+          <h2>Contests and activations</h2>
+          <p>Local, national, and international contests along with field operating opportunities.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container two-col">
+        <article class="content-card">
+          <h2>Club activity</h2>
+          <p>
+            The current live page highlights several recurring event types and uses this page as the
+            main activity hub.
+          </p>
+
+          <ul class="event-list">
+            <li>Monthly technical talks.</li>
+            <li>Hands-on workshops on topics such as installing new services, building antennas, and more.</li>
+            <li>Local, national, and international contests.</li>
+            <li>Field activations in notable places such as The National World War II Museum.</li>
+          </ul>
+
+          <p>
+            In the U.S. alone there are usually several ham contests each week, and the current site
+            points members to an external contest calendar for more detail.
+          </p>
+
+          <div class="hero-actions">
+            <a
+              class="button button-primary"
+              href="https://www.contestcalendar.com/weeklycont.php"
+              target="_blank" rel="noopener noreferrer">Contest Calendar</a>
+          </div>
+        </article>
+
+        <aside class="link-card">
+          <h2>Resources and updates</h2>
+          <p>
+            The live Events page also keeps a membership link and newsletter archive easy to find,
+            so those should remain visible here.
+          </p>
+
+          <ul class="link-list">
+            <li>
+              <a
+                href="https://forms.gle/8mJckWWWo5zsx4kW6"
+                target="_blank" rel="noopener noreferrer">Join Today!</a>
+            </li>
+            <li>
+              <a
+                href="https://docs.google.com/document/d/e/2PACX-1vSXKrYQHya9E-z61vNy4VQc5eg_NjKHBvAOnPNfLy6weVbMB7hHZEQzkYwwn__drVH4kQlUz91m2K4H/pub"
+                target="_blank" rel="noopener noreferrer">Newsletter Archive</a>
+            </li>
+            <li>
+              <a
+                href="https://drive.google.com/drive/folders/1iqIt2eAF8qbzFGz0AWc3VTtNPFVoyPDo?usp=drive_link"
+                target="_blank" rel="noopener noreferrer">Newsletter Archive Folder</a>
+            </li>
+          </ul>
         </aside>
       </div>
     </section>
-    
-<section class="section section-contrast">
-  <div class="container split">
-    <div>
-      <p class="eyebrow">What's Happening</p>
-      <h2>Club calendar</h2>
-      <p>The current public Google Calendar embed is preserved here so you can keep the same event-publishing workflow.</p>
-    </div>
-    <div class="calendar-frame">
-      <iframe src="https://calendar.google.com/calendar/embed?height=700&wkst=1&ctz=America%2FChicago&mode=MONTH&showTitle=0&src=Y19kYmFmNzNlMDQ2ZGQ3YTY5NWQ4NDJkYzMzNGY4NjUxNjczYWExN2ZiNmFmNWY0MmQwN2RjZWE2MmNiZTcyYzAyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y19lYzJkNDY4OTkxMWQ1ZGNhNTYwODNiNzgyMGIwMTNkNGYwMjY2NTk2M2IyMWRlYWQwYzVlMjg3OWI0ZTZjNThiQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y19lNGEyZGU2M2EwNjFiYzhhNjM4YTM0MjA1OWMyMWY5Yzg0MjJhZmJhYmFhM2Q4OWNmNzk5YWVmMzM0YjhhYzdjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23a79b8e&color=%23f4511e&color=%23616161" title="Jefferson Amateur Radio Club calendar" loading="lazy"></iframe>
-    </div>
-  </div>
-</section>
-<section class="section">
-  <div class="container text-card">
-    <h2>Editing tip</h2>
-    <p>To change the calendar later, edit the iframe src in <code>whatshappening.html</code>.</p>
-  </div>
-</section>
 
+    <section class="section">
+      <div class="container calendar-card">
+        <h2>What's Happening calendar</h2>
+        <p>
+          This section preserves the embedded public Google Calendar so your event workflow can stay
+          the same even after leaving Framer.
+        </p>
+
+        <iframe
+          src="https://calendar.google.com/calendar/embed?height=700&wkst=1&ctz=America%2FChicago&mode=MONTH&showTitle=0&src=Y19kYmFmNzNlMDQ2ZGQ3YTY5NWQ4NDJkYzMzNGY4NjUxNjczYWExN2ZiNmFmNWY0MmQwN2RjZWE2MmNiZTcyYzAyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y19lYzJkNDY4OTkxMWQ1ZGNhNTYwODNiNzgyMGIwMTNkNGYwMjY2NTk2M2IyMWRlYWQwYzVlMjg3OWI0ZTZjNThiQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y19lNGEyZGU2M2EwNjFiYzhhNjM4YTM0MjA1OWMyMWY5Yzg0MjJhZmJhYmFhM2Q4OWNmNzk5YWVmMzM0YjhhYzdjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23a79b8e&color=%23f4511e&color=%23616161"
+          title="Jefferson Amateur Radio Club calendar"
+          loading="lazy">
+        </iframe>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container cta-card">
+        <div class="cta-strip">
+          <div>
+            <h2>Stay connected</h2>
+            <p>
+              The live site directs visitors to Facebook and YouTube for updates, and this page
+              keeps those social paths easy to reach.
+            </p>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://www.facebook.com/W5GAD" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a class="button button-secondary" href="https://www.youtube.com/channel/UCsIPhq_hA06RbbjoW6fPZsQ" target="_blank" rel="noopener noreferrer">YouTube</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>Jefferson Amateur Radio Club • W5GAD</p>
-      <p>Static site starter for Fly.io and GitHub Pages.</p>
+      <div>© 2026 Jefferson Amateur Radio Club, Inc.</div>
+      <div class="footer-links">
+        <a href="./community.html">Community</a>
+        <a href="./ourclub.html">Our Club</a>
+        <a href="./education.html">Education</a>
+      </div>
     </div>
   </footer>
+
   <script src="./site.js" defer></script>
 </body>
 </html>

@@ -4,12 +4,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jefferson Amateur Radio Club</title>
-  <meta name="description" content="Jefferson Amateur Radio Club static site for W5GAD.">
-  <meta name="theme-color" content="#0a5c63">
+  <meta name="description" content="Jefferson Amateur Radio Club in Metairie, Louisiana. Learn about amateur radio, club activity, events, membership, and education resources.">
+  <meta name="theme-color" content="#0b5d63">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="top-strip">
+    <div class="container">
+      <span>See What's Happening calendar for upcoming events.</span>
+      <a href="./whatshappening.html">What's Happening calendar</a>
+    </div>
+  </div>
+
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="./index.html" aria-label="Jefferson Amateur Radio Club home">
@@ -17,12 +25,14 @@
           <circle cx="60" cy="60" r="52" fill="none" stroke="currentColor" stroke-width="8"></circle>
           <path d="M29 73l18-34 13 25 13-25 18 34" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></path>
         </svg>
-        <span>
+        <span class="brand-copy">
           <strong>Jefferson Amateur Radio Club</strong>
-          <small>W5GAD</small>
+          <span>W5GAD</span>
         </span>
       </a>
+
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+
       <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
         <a href="./index.html" aria-current="page">Home</a>
         <a href="./whatshappening.html">What's Happening</a>
@@ -33,87 +43,228 @@
       </nav>
     </div>
   </header>
+
   <main id="main">
     <section class="page-hero">
-      <div class="container page-hero-grid">
-        <div>
-          <p class="eyebrow">Jefferson Parish • Amateur radio • Public service</p>
-          <h1>Jefferson Amateur Radio Club</h1>
-          <p class="lede">A traditional static homepage for W5GAD with clean HTML, fast loading, and a structure you can edit directly in GitHub.</p>
+      <div class="container hero-shell">
+        <div class="hero-inner">
+          <div class="hero-panel">
+            <p class="kicker">Jefferson Amateur Radio Club · Metairie, Louisiana</p>
+            <h1>Jefferson ARC: Join the Community</h1>
+            <p>
+              Jefferson ARC fosters the craft and technology of amateur radio through mentorship,
+              education, and camaraderie among radio amateurs. The club welcomes people who are
+              just getting started as well as experienced operators.
+            </p>
+
+            <div class="hero-actions">
+              <a
+                class="button button-primary"
+                href="https://docs.google.com/document/d/e/2PACX-1vSpJnlMie-XZrrciFLWdxBV7GKExPMI0bhTsbT3_eXTpbYAVG9WqJhppjG4ePLGAeyO9MWhpZlg2vAc/pub"
+                target="_blank" rel="noopener noreferrer">Join Today</a>
+
+              <a
+                class="button button-secondary"
+                href="./education.html">Learning Resources</a>
+            </div>
+          </div>
+
+          <aside class="hero-side">
+            <div class="glass-card">
+              <h2>Ham Radio: Join a Global Community</h2>
+              <p>
+                The current site emphasizes membership, mentoring, equipment access, and practical
+                club activity. This static rebuild keeps those same priorities front and center.
+              </p>
+
+              <ul class="stat-list">
+                <li>Beginner-friendly education and resource links.</li>
+                <li>Hands-on events, talks, contests, and field activity.</li>
+                <li>Clubhouse, equipment, and a local ham radio community.</li>
+              </ul>
+            </div>
+          </aside>
         </div>
-        <aside class="hero-card">
-          <h2>W5GAD</h2>
-          <p class="muted">Traditional static site starter with separate pages, shared styles, and deployment-ready Docker files.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Explore the club</h2>
+          </div>
+          <p>
+            Use visually distinct cards to direct visitors into the same major areas highlighted by
+            the current site.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <a class="feature-card feature-wide card-events" href="./whatshappening.html">
+            <h3>What's Happening</h3>
+            <p>Calendar, activities, technical talks, workshops, field operations, and contests.</p>
+          </a>
+
+          <a class="feature-card feature-tall card-community" href="./community.html">
+            <h3>Community</h3>
+            <p>Learn how Jefferson ARC connects local operators with the broader amateur radio world.</p>
+          </a>
+
+          <a class="feature-card feature-mid card-education" href="./education.html">
+            <h3>Education</h3>
+            <p>Start with the beginner guide, handbook, and learning resources.</p>
+          </a>
+
+          <a class="feature-card feature-mid card-equipment" href="./equipment.html">
+            <h3>Equipment</h3>
+            <p>Explore stations, gear, repeaters, projects, and hands-on technical work.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container three-col">
+        <article class="palette-card teal">
+          <h2>Get started</h2>
+          <p>
+            Keep the first-time visitor flow simple: learn what amateur radio is, read the beginner
+            material, and find the next event.
+          </p>
+        </article>
+
+        <article class="palette-card gold">
+          <h2>Membership</h2>
+          <p>
+            The current site highlights annual dues of $36 and positions membership as an easy next
+            step for interested visitors.
+          </p>
+        </article>
+
+        <article class="palette-card rust">
+          <h2>Technical activity</h2>
+          <p>
+            Workshops, contests, antennas, field activations, and practical operating should all
+            feel visible in the new design.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container two-col">
+        <article class="content-card">
+          <h2>Start here</h2>
+          <p>
+            These are the most important verified resources already linked from the current site and
+            should remain prominent on the homepage.
+          </p>
+
+          <ul class="link-list">
+            <li>
+              <a
+                href="https://docs.google.com/document/d/1yk4-dGI7it45j2p8jyAuyUT0SCs4ic_mBzoGz-Up-8s/edit?usp=sharing"
+                target="_blank" rel="noopener noreferrer">
+                Here's our Beginner's Guide to Amateur Radio
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://docs.google.com/document/d/e/2PACX-1vSQCZFhQoAKEtb3L3m40ezznraCISzZ6rtkMWLv84hq0dSjxK5Z512jBkIMsxOtvwDppB_6T6SVywUQ/pub"
+                target="_blank" rel="noopener noreferrer">
+                New Member Handbook
+              </a>
+            </li>
+            <li>
+              <a href="./whatshappening.html">What's Happening calendar</a>
+            </li>
+          </ul>
+        </article>
+
+        <aside class="info-card">
+          <h2>Join Jefferson ARC</h2>
+          <p>
+            With an annual membership of just $36, the current site presents membership as a direct
+            path into club equipment, activity, and community participation.
+          </p>
+
+          <div class="hero-actions">
+            <a
+              class="button button-primary"
+              href="https://docs.google.com/document/d/e/2PACX-1vSpJnlMie-XZrrciFLWdxBV7GKExPMI0bhTsbT3_eXTpbYAVG9WqJhppjG4ePLGAeyO9MWhpZlg2vAc/pub"
+              target="_blank" rel="noopener noreferrer">Join Today</a>
+
+            <a class="button button-secondary" href="./ourclub.html">Membership Benefits</a>
+          </div>
         </aside>
       </div>
     </section>
-    
-<section class="section">
-  <div class="container card-grid">
-    <a class="feature-card" href="./whatshappening.html"><h2>What's Happening</h2><p>Meetings, nets, and event information with the embedded Google Calendar.</p></a>
-    <a class="feature-card" href="./community.html"><h2>Community</h2><p>Public links and useful information for staying in touch with the club.</p></a>
-    <a class="feature-card" href="./education.html"><h2>Education</h2><p>Training materials and club documents for new and prospective operators.</p></a>
-  </div>
-</section>
-<section class="section section-contrast">
-  <div class="container two-col">
-    <div class="text-card">
-      <p class="eyebrow">Overview</p>
-      <h2>A faster, simpler website</h2>
-      <p>This version is designed as ordinary HTML, CSS, and JavaScript so it is easy to edit in a repository and easy to host on either Fly.io or GitHub Pages.</p>
-    </div>
-    <div class="list-card">
-      <ul>
-        <li>Separate pages instead of a single long page.</li>
-        <li>No CMS, no Framer dependency, and no static-site generator.</li>
-        <li>Calendar and Google Docs links retained.</li>
-      </ul>
-    </div>
-  </div>
-</section>
 
+    <section class="section">
+      <div class="container photo-band">
+        <div class="photo-large">
+          <img
+            src="https://framerusercontent.com/images/2eNi2GUQIiByeTXdTrF5JTkZw1I.jpg?scale-down-to=2048"
+            alt="Jefferson Amateur Radio Club members gathered outdoors"
+            width="1400"
+            height="900"
+            loading="lazy">
+        </div>
+
+        <div class="photo-stack">
+          <div>
+            <img
+              src="https://framerusercontent.com/images/vf7rEQRmxPEFYIsFRIxBlKQifc.png?scale-down-to=1024"
+              alt="Graphic artwork from the current W5GAD site"
+              width="900"
+              height="700"
+              loading="lazy">
+          </div>
+          <div>
+            <img
+              src="https://framerusercontent.com/images/rtbtbOSfIs3GvY6SrR2Klpml8.png"
+              alt="Club-themed illustration from the current W5GAD site"
+              width="900"
+              height="700"
+              loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container cta-card">
+        <div class="cta-strip">
+          <div>
+            <h2>Follow Jefferson ARC</h2>
+            <p>
+              Keep the social links visible in the same way the current site does so people can
+              follow club updates outside the website.
+            </p>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://www.facebook.com/W5GAD" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a class="button button-secondary" href="https://www.instagram.com/w5gad/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a class="button button-secondary" href="https://www.youtube.com/channel/UCsIPhq_hA06RbbjoW6fPZsQ" target="_blank" rel="noopener noreferrer">YouTube</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>Jefferson Amateur Radio Club • W5GAD</p>
-      <p>Static site starter for Fly.io and GitHub Pages.</p>
+      <div>© 2026 Jefferson Amateur Radio Club, Inc.</div>
+      <div class="footer-links">
+        <a href="./community.html">Community</a>
+        <a href="./ourclub.html">Our Club</a>
+        <a href="./education.html">Education</a>
+      </div>
     </div>
   </footer>
+
   <script src="./site.js" defer></script>
-  <style src="./styles.css" defer></style>
-  <!-- <style>
-    .site-header, .site-footer {
-      background-color: #0a5c63;
-      color: #fff;
-    }
-    .nav-toggle {
-      background: none;
-      border: 2px solid #fff;
-      color: #fff;
-      padding: 0.5em 1em;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-    .nav-toggle[aria-expanded="true"] {
-      background-color: #fff;
-      color: #0a5c63;
-    }
-    .site-nav {
-      display: none;
-    }
-    .site-nav a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 1em;
-    }
-    @media (min-width: 600px) {
-      .nav-toggle {
-        display: none;
-      }
-      .site-nav {
-        display: block;
-      }
-    }
-  </style>   -->
 </body>
 </html>
