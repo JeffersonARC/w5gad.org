@@ -1,77 +1,183 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Education • W5GAD</title>
-  <meta name="description" content="Jefferson Amateur Radio Club static site for W5GAD.">
-  <meta name="theme-color" content="#0a5c63">
-  <link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Education – Jefferson ARC W5GAD</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="./index.html" aria-label="Jefferson Amateur Radio Club home">
-        <svg viewBox="0 0 120 120" aria-hidden="true" class="brand-mark">
-          <circle cx="60" cy="60" r="52" fill="none" stroke="currentColor" stroke-width="8"></circle>
-          <path d="M29 73l18-34 13 25 13-25 18 34" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
-        <span>
-          <strong>Jefferson Amateur Radio Club</strong>
-          <small>W5GAD</small>
-        </span>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-        <a href="./index.html">Home</a>
-        <a href="./whatshappening.html">What's Happening</a>
-        <a href="./community.html">Community</a>
-        <a href="./ourclub.html">Our Club</a>
-        <a href="./equipment.html">Equipment</a>
-        <a href="./education.html" aria-current="page">Education</a>
+
+  <!-- Announcement Bar -->
+  <div id="announcement-bar">
+    See <a href="whatshappening.html"><strong>What's Happening calendar</strong></a> for upcoming events.
+    <button id="bar-close" aria-label="Dismiss announcement">&times;</button>
+  </div>
+
+  <!-- Site Header -->
+  <header id="site-header">
+    <div class="header-inner">
+      <div class="site-title">Jefferson Amateur Radio Club &ndash; W5GAD</div>
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="whatshappening.html">What's Happening</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="ourclub.html">Our Club</a></li>
+          <li><a href="equipment.html">Equipment</a></li>
+          <li><a href="education.html">Education</a></li>
+        </ul>
+        <button id="nav-toggle" aria-label="Open menu">&#9776;</button>
       </nav>
     </div>
   </header>
-  <main id="main">
-    <section class="page-hero">
-      <div class="container page-hero-grid">
+
+  <!-- Mobile Menu Overlay -->
+  <nav id="mobile-menu" aria-label="Mobile navigation">
+    <button id="mobile-menu-close" aria-label="Close menu">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="whatshappening.html">What's Happening</a>
+    <a href="community.html">Community</a>
+    <a href="ourclub.html">Our Club</a>
+    <a href="equipment.html">Equipment</a>
+    <a href="education.html">Education</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+
+    <div class="page-hero">
+      <h1>Get Started or Level Up!</h1>
+      <p>At Jefferson ARC, educating future and current enthusiasts is at the core of what we do.</p>
+    </div>
+
+    <div class="page-content" style="padding-top:16px;">
+
+      <!-- Row 1: License Training & Monthly Talks -->
+      <div class="card-grid">
+
         <div>
-          <p class="eyebrow">Training and onboarding</p>
-          <h1>Education</h1>
-          <p class="lede">A separate page for beginner resources, handbooks, and club learning material.</p>
+          <img src="images/edu-license-training.jpg" alt="License training session at Jefferson ARC" />
+          <h3>License Training &amp; Examinations</h3>
+          <p>
+            Jefferson ARC offers license examinations under the auspices of the FCC.
+            We occasionally offer and &ldquo;all-in-a-day&rdquo; session. New hams can
+            learn all they need to know for their Technician Class license in one day
+            and take the exam at the end of the session.
+          </p>
+          <a href="PLACEHOLDER_LICENSE_URL" class="btn btn-black btn-block mt-16">Get Your License Now</a>
         </div>
-        <aside class="hero-card">
-          <h2>W5GAD</h2>
-          <p class="muted">Traditional static site starter with separate pages, shared styles, and deployment-ready Docker files.</p>
-        </aside>
+
+        <div>
+          <img src="images/edu-monthly-talks.jpg" alt="Monthly technical talk at Jefferson ARC" />
+          <h3>Monthly Talks</h3>
+          <p>
+            At monthly talks, our members are introduced to many fascinating and
+            relevant topics. These talks are often given by specialists from other
+            parts of the country, sometimes over video meetings, or by experienced
+            members.
+          </p>
+          <p>Past topics have included:</p>
+          <ul style="list-style:disc; padding-left:20px; color:var(--gray-text); margin-bottom:1em;">
+            <li>Lightning protection</li>
+            <li>Antenna construction</li>
+            <li>and International contesting</li>
+          </ul>
+          <a href="PLACEHOLDER_PAST_TALKS_URL" class="btn btn-black btn-block mt-16">Past Monthly Talks</a>
+        </div>
+
       </div>
-    </section>
-    
-<section class="section">
-  <div class="container two-col">
-    <div class="text-card">
-      <p class="eyebrow">Education</p>
-      <h2>Learning resources</h2>
-      <p>These links mirror the public Google Docs already linked from the current site.</p>
-    </div>
-    <div class="list-card">
-      <ul>
-        <li><a href="https://docs.google.com/document/d/1yk4-dGI7it45j2p8jyAuyUT0SCs4ic_mBzoGz-Up-8s/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Beginner's Guide to Amateur Radio</a></li>
-        <li><a href="https://docs.google.com/document/d/e/2PACX-1vSQCZFhQoAKEtb3L3m40ezznraCISzZ6rtkMWLv84hq0dSjxK5Z512jBkIMsxOtvwDppB_6T6SVywUQ/pub" target="_blank" rel="noopener noreferrer">New Member Handbook</a></li>
-        <li><a href="https://docs.google.com/document/d/e/2PACX-1vSpJnlMie-XZrrciFLWdxBV7GKExPMI0bhTsbT3_eXTpbYAVG9WqJhppjG4ePLGAeyO9MWhpZlg2vAc/pub" target="_blank" rel="noopener noreferrer">Join Today</a></li>
-      </ul>
-    </div>
-  </div>
-</section>
+
+      <!-- Row 2: Past Special Sessions & Public Education -->
+      <div class="card-grid">
+
+        <div>
+          <img src="images/edu-special-sessions.jpg" alt="Special training session" />
+          <h3>Past Special Sessions</h3>
+          <p>
+            Throughout the years, we offer special training sessions that provide
+            in-depth knowledge about different aspects of the hobby.
+          </p>
+          <p>Here's your chance to learn more about topics such as:</p>
+          <ul style="list-style:disc; padding-left:20px; color:var(--gray-text); margin-bottom:1em;">
+            <li>Radio-based texting and email</li>
+            <li>Using repeaters in orbiting satellites</li>
+            <li>Talking with the International Space Station</li>
+            <li>Helping scientists gather info about solar activity</li>
+          </ul>
+          <a href="PLACEHOLDER_SPECIAL_SESSIONS_URL" class="btn btn-black btn-block mt-16">Past Special Sessions</a>
+        </div>
+
+        <div>
+          <img src="images/edu-public-education.jpg" alt="Public education session with Scouts" />
+          <h3>Public Education</h3>
+          <p>
+            We focus on continuing education for members who want to get more
+            advanced licenses. We host an all-in-a-day session where new users can
+            learn all they need for the Technician license in one day and take the
+            exam at the end of the session. We provide training for Scouts
+            organizations to support Radio Merit Badges.
+          </p>
+          <a href="PLACEHOLDER_PUBLIC_EDUCATION_URL" class="btn btn-black btn-block mt-16">Public Education</a>
+        </div>
+
+      </div>
+
+      <!-- Row 3: Educational Materials & Additional Resources -->
+      <div class="card-grid">
+
+        <div>
+          <img src="images/edu-materials.jpg" alt="Educational presentation" />
+          <h3>Educational Materials</h3>
+          <p>
+            When an event produces useful educational materials, we store that on
+            our website and make it available publicly. This material includes member
+            and guest speaker slides, designs for antennas we build at the club,
+            detailed technical information we learn about equipment we need to
+            install, etc.
+          </p>
+          <p style="font-size:0.875rem; color:var(--gray-text);">
+            When you click &ldquo;More Info&rdquo; below, you will see a page with a
+            &ldquo;Sign in&rdquo; button. You can ignore this.
+          </p>
+          <a href="PLACEHOLDER_EDU_MATERIALS_URL" class="btn btn-black btn-block mt-16">Educational Materials</a>
+        </div>
+
+        <div>
+          <img src="images/edu-additional-resources.jpg" alt="WSR-88D Radar Move Timeline" />
+          <h3>Additional Resources</h3>
+          <p>
+            Of course, the Internet has endless amounts of information about all
+            aspects of amateur radio. Some of it is great, some not so great, and
+            some out-of-date. We try to keep an up-to-date curation of materials on
+            the Internet that members have found beneficial.
+          </p>
+          <a href="PLACEHOLDER_ADDITIONAL_RESOURCES_URL" class="btn btn-black btn-block mt-16">Additional Resources</a>
+        </div>
+
+      </div>
+
+    </div><!-- /.page-content -->
 
   </main>
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>Jefferson Amateur Radio Club • W5GAD</p>
-      <p>Static site starter for Fly.io and GitHub Pages.</p>
-    </div>
+
+  <!-- Footer -->
+  <footer id="site-footer">
+    <span class="footer-copy">&copy; 2025 Jefferson Amateur Radio Club, Inc.</span>
+    <nav class="footer-social" aria-label="Social media links">
+      <a href="PLACEHOLDER_FACEBOOK_URL" target="_blank" rel="noopener">Facebook</a>
+      <span aria-hidden="true">&bull;</span>
+      <a href="PLACEHOLDER_X_URL" target="_blank" rel="noopener">X</a>
+      <span aria-hidden="true">&bull;</span>
+      <a href="PLACEHOLDER_INSTAGRAM_URL" target="_blank" rel="noopener">Instagram</a>
+      <span aria-hidden="true">&bull;</span>
+      <a href="PLACEHOLDER_YOUTUBE_URL" target="_blank" rel="noopener">Youtube</a>
+    </nav>
   </footer>
-  <script src="./site.js" defer></script>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

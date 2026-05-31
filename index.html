@@ -1,270 +1,149 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jefferson Amateur Radio Club</title>
-  <meta name="description" content="Jefferson Amateur Radio Club in Metairie, Louisiana. Learn about amateur radio, club activity, events, membership, and education resources.">
-  <meta name="theme-color" content="#0b5d63">
-  <link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jefferson Amateur Radio Club – W5GAD</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
 
-  <div class="top-strip">
-    <div class="container">
-      <span>See What's Happening calendar for upcoming events.</span>
-      <a href="./whatshappening.html">What's Happening calendar</a>
-    </div>
+  <!-- =====================================================
+       Announcement Bar
+       ===================================================== -->
+  <div id="announcement-bar">
+    See <a href="whatshappening.html"><strong>What's Happening calendar</strong></a> for upcoming events.
+    <button id="bar-close" aria-label="Dismiss announcement">&times;</button>
   </div>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="./index.html" aria-label="Jefferson Amateur Radio Club home">
-        <svg viewBox="0 0 120 120" aria-hidden="true" class="brand-mark">
-          <circle cx="60" cy="60" r="52" fill="none" stroke="currentColor" stroke-width="8"></circle>
-          <path d="M29 73l18-34 13 25 13-25 18 34" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
-        <span class="brand-copy">
-          <strong>Jefferson Amateur Radio Club</strong>
-          <span>W5GAD</span>
-        </span>
-      </a>
-
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-
-      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-        <a href="./index.html" aria-current="page">Home</a>
-        <a href="./whatshappening.html">What's Happening</a>
-        <a href="./community.html">Community</a>
-        <a href="./ourclub.html">Our Club</a>
-        <a href="./equipment.html">Equipment</a>
-        <a href="./education.html">Education</a>
+  <!-- =====================================================
+       Site Header
+       ===================================================== -->
+  <header id="site-header">
+    <div class="header-inner">
+      <div class="site-title">Jefferson Amateur Radio Club &ndash; W5GAD</div>
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="whatshappening.html">What's Happening</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="ourclub.html">Our Club</a></li>
+          <li><a href="equipment.html">Equipment</a></li>
+          <li><a href="education.html">Education</a></li>
+        </ul>
+        <button id="nav-toggle" aria-label="Open menu">&#9776;</button>
       </nav>
     </div>
   </header>
 
-  <main id="main">
-    <section class="page-hero">
-      <div class="container hero-shell">
-        <div class="hero-inner">
-          <div class="hero-panel">
-            <p class="kicker">Jefferson Amateur Radio Club · Metairie, Louisiana</p>
-            <h1>Jefferson ARC: Join the Community</h1>
-            <p>
-              Jefferson ARC fosters the craft and technology of amateur radio through mentorship,
-              education, and camaraderie among radio amateurs. The club welcomes people who are
-              just getting started as well as experienced operators.
-            </p>
+  <!-- Mobile Menu Overlay -->
+  <nav id="mobile-menu" aria-label="Mobile navigation">
+    <button id="mobile-menu-close" aria-label="Close menu">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="whatshappening.html">What's Happening</a>
+    <a href="community.html">Community</a>
+    <a href="ourclub.html">Our Club</a>
+    <a href="equipment.html">Equipment</a>
+    <a href="education.html">Education</a>
+  </nav>
 
-            <div class="hero-actions">
-              <a
-                class="button button-primary"
-                href="https://docs.google.com/document/d/e/2PACX-1vSpJnlMie-XZrrciFLWdxBV7GKExPMI0bhTsbT3_eXTpbYAVG9WqJhppjG4ePLGAeyO9MWhpZlg2vAc/pub"
-                target="_blank" rel="noopener noreferrer">Join Today</a>
+  <!-- =====================================================
+       Main Content
+       ===================================================== -->
+  <main>
 
-              <a
-                class="button button-secondary"
-                href="./education.html">Learning Resources</a>
-            </div>
-          </div>
+    <!-- Hero photo: full-width club photo -->
+    <div class="full-bleed">
+      <img
+        src="images/home-hero.jpg"
+        alt="Jefferson ARC members at a club gathering"
+        style="width:100%; max-height:420px; object-fit:cover; display:block;"
+      />
+    </div>
 
-          <aside class="hero-side">
-            <div class="glass-card">
-              <h2>Ham Radio: Join a Global Community</h2>
-              <p>
-                The current site emphasizes membership, mentoring, equipment access, and practical
-                club activity. This static rebuild keeps those same priorities front and center.
-              </p>
+    <!-- Intro text -->
+    <div class="home-intro">
+      <h1>Jefferson ARC: Join the Community</h1>
+      <p>
+        Jefferson ARC fosters the craft and technology of amateur radio through
+        mentorship and camaraderie among radio amateurs. We offer education and
+        testing for new and existing operators and serve the community by supporting
+        local emergency responders and providing education to the general public.
+        Want to get involved?
+        <a href="PLACEHOLDER_BEGINNERS_GUIDE_URL" class="text-link">Here's our Beginner's Guide to Amateur Radio</a>
+      </p>
+      <p style="margin-top:8px;">
+        For new members or those considering joining, check out our
+        <a href="PLACEHOLDER_HANDBOOK_URL" class="text-link">New Member Handbook</a>.
+      </p>
+    </div>
 
-              <ul class="stat-list">
-                <li>Beginner-friendly education and resource links.</li>
-                <li>Hands-on events, talks, contests, and field activity.</li>
-                <li>Clubhouse, equipment, and a local ham radio community.</li>
-              </ul>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
+    <!-- Navigation Tiles -->
+    <div class="page-content" style="padding-top:0;">
+      <div class="nav-tiles-desktop">
 
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <h2>Explore the club</h2>
-          </div>
-          <p>
-            Use visually distinct cards to direct visitors into the same major areas highlighted by
-            the current site.
-          </p>
-        </div>
-
-        <div class="feature-grid">
-          <a class="feature-card feature-wide card-events" href="./whatshappening.html">
-            <h3>What's Happening</h3>
-            <p>Calendar, activities, technical talks, workshops, field operations, and contests.</p>
+        <!-- Left column -->
+        <div class="col-side">
+          <a href="whatshappening.html" class="nav-tile">
+            <img src="images/tile-whatshappening.jpg" alt="What's Happening" />
+            <div class="nav-tile-label">What's<br>Happening</div>
           </a>
-
-          <a class="feature-card feature-tall card-community" href="./community.html">
-            <h3>Community</h3>
-            <p>Learn how Jefferson ARC connects local operators with the broader amateur radio world.</p>
-          </a>
-
-          <a class="feature-card feature-mid card-education" href="./education.html">
-            <h3>Education</h3>
-            <p>Start with the beginner guide, handbook, and learning resources.</p>
-          </a>
-
-          <a class="feature-card feature-mid card-equipment" href="./equipment.html">
-            <h3>Equipment</h3>
-            <p>Explore stations, gear, repeaters, projects, and hands-on technical work.</p>
+          <a href="equipment.html" class="nav-tile">
+            <img src="images/tile-equipment.jpg" alt="Our Equipment" />
+            <div class="nav-tile-label">Our<br>Equipment</div>
           </a>
         </div>
-      </div>
-    </section>
 
-    <section class="section">
-      <div class="container three-col">
-        <article class="palette-card teal">
-          <h2>Get started</h2>
-          <p>
-            Keep the first-time visitor flow simple: learn what amateur radio is, read the beginner
-            material, and find the next event.
-          </p>
-        </article>
+        <!-- Center (featured) -->
+        <a href="ourclub.html" class="nav-tile tile-center">
+          <img src="images/tile-center-main.jpg" alt="Jefferson ARC members" />
+        </a>
 
-        <article class="palette-card gold">
-          <h2>Membership</h2>
-          <p>
-            The current site highlights annual dues of $36 and positions membership as an easy next
-            step for interested visitors.
-          </p>
-        </article>
-
-        <article class="palette-card rust">
-          <h2>Technical activity</h2>
-          <p>
-            Workshops, contests, antennas, field activations, and practical operating should all
-            feel visible in the new design.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container two-col">
-        <article class="content-card">
-          <h2>Start here</h2>
-          <p>
-            These are the most important verified resources already linked from the current site and
-            should remain prominent on the homepage.
-          </p>
-
-          <ul class="link-list">
-            <li>
-              <a
-                href="https://docs.google.com/document/d/1yk4-dGI7it45j2p8jyAuyUT0SCs4ic_mBzoGz-Up-8s/edit?usp=sharing"
-                target="_blank" rel="noopener noreferrer">
-                Here's our Beginner's Guide to Amateur Radio
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://docs.google.com/document/d/e/2PACX-1vSQCZFhQoAKEtb3L3m40ezznraCISzZ6rtkMWLv84hq0dSjxK5Z512jBkIMsxOtvwDppB_6T6SVywUQ/pub"
-                target="_blank" rel="noopener noreferrer">
-                New Member Handbook
-              </a>
-            </li>
-            <li>
-              <a href="./whatshappening.html">What's Happening calendar</a>
-            </li>
-          </ul>
-        </article>
-
-        <aside class="info-card">
-          <h2>Join Jefferson ARC</h2>
-          <p>
-            With an annual membership of just $36, the current site presents membership as a direct
-            path into club equipment, activity, and community participation.
-          </p>
-
-          <div class="hero-actions">
-            <a
-              class="button button-primary"
-              href="https://docs.google.com/document/d/e/2PACX-1vSpJnlMie-XZrrciFLWdxBV7GKExPMI0bhTsbT3_eXTpbYAVG9WqJhppjG4ePLGAeyO9MWhpZlg2vAc/pub"
-              target="_blank" rel="noopener noreferrer">Join Today</a>
-
-            <a class="button button-secondary" href="./ourclub.html">Membership Benefits</a>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container photo-band">
-        <div class="photo-large">
-          <img
-            src="https://framerusercontent.com/images/2eNi2GUQIiByeTXdTrF5JTkZw1I.jpg?scale-down-to=2048"
-            alt="Jefferson Amateur Radio Club members gathered outdoors"
-            width="1400"
-            height="900"
-            loading="lazy">
+        <!-- Right column -->
+        <div class="col-side">
+          <a href="ourclub.html" class="nav-tile">
+            <img src="images/tile-ourclub.jpg" alt="About Our Club" />
+            <div class="nav-tile-label">Our<br>Club</div>
+          </a>
+          <a href="education.html" class="nav-tile">
+            <img src="images/tile-education.jpg" alt="Educational Opportunities" />
+            <div class="nav-tile-label">Educational<br>Opportunities</div>
+          </a>
         </div>
 
-        <div class="photo-stack">
-          <div>
-            <img
-              src="https://framerusercontent.com/images/vf7rEQRmxPEFYIsFRIxBlKQifc.png?scale-down-to=1024"
-              alt="Graphic artwork from the current W5GAD site"
-              width="900"
-              height="700"
-              loading="lazy">
-          </div>
-          <div>
-            <img
-              src="https://framerusercontent.com/images/rtbtbOSfIs3GvY6SrR2Klpml8.png"
-              alt="Club-themed illustration from the current W5GAD site"
-              width="900"
-              height="700"
-              loading="lazy">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container cta-card">
-        <div class="cta-strip">
-          <div>
-            <h2>Follow Jefferson ARC</h2>
-            <p>
-              Keep the social links visible in the same way the current site does so people can
-              follow club updates outside the website.
-            </p>
-          </div>
-
-          <div class="hero-actions">
-            <a class="button button-primary" href="https://www.facebook.com/W5GAD" target="_blank" rel="noopener noreferrer">Facebook</a>
-            <a class="button button-secondary" href="https://www.instagram.com/w5gad/" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a class="button button-secondary" href="https://www.youtube.com/channel/UCsIPhq_hA06RbbjoW6fPZsQ" target="_blank" rel="noopener noreferrer">YouTube</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>© 2026 Jefferson Amateur Radio Club, Inc.</div>
-      <div class="footer-links">
-        <a href="./community.html">Community</a>
-        <a href="./ourclub.html">Our Club</a>
-        <a href="./education.html">Education</a>
       </div>
     </div>
+
+    <!-- Membership CTA -->
+    <section class="membership-cta">
+      <h2>With an annual membership of just $36, you gain full access to our range of equipment and enjoy all the perks of being part of our community.</h2>
+      <a href="PLACEHOLDER_JOIN_URL" class="btn btn-black">Join Today</a>
+      <p class="cta-sub">
+        Learn more about membership benefits <a href="ourclub.html#membership" class="link-here">HERE</a>
+      </p>
+    </section>
+
+  </main>
+
+  <!-- =====================================================
+       Footer
+       ===================================================== -->
+  <footer id="site-footer">
+    <span class="footer-copy">&copy; 2025 Jefferson Amateur Radio Club, Inc.</span>
+    <nav class="footer-social" aria-label="Social media links">
+      <a href="PLACEHOLDER_FACEBOOK_URL" target="_blank" rel="noopener">Facebook</a>
+      <span aria-hidden="true">&bull;</span>
+      <a href="PLACEHOLDER_X_URL" target="_blank" rel="noopener">X</a>
+      <span aria-hidden="true">&bull;</span>
+      <a href="PLACEHOLDER_INSTAGRAM_URL" target="_blank" rel="noopener">Instagram</a>
+      <span aria-hidden="true">&bull;</span>
+      <a href="PLACEHOLDER_YOUTUBE_URL" target="_blank" rel="noopener">Youtube</a>
+    </nav>
   </footer>
 
-  <script src="./site.js" defer></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

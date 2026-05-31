@@ -1,84 +1,189 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Community • W5GAD</title>
-  <meta name="description" content="Jefferson Amateur Radio Club static site for W5GAD.">
-  <meta name="theme-color" content="#0a5c63">
-  <link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community – Jefferson ARC W5GAD</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="./index.html" aria-label="Jefferson Amateur Radio Club home">
-        <svg viewBox="0 0 120 120" aria-hidden="true" class="brand-mark">
-          <circle cx="60" cy="60" r="52" fill="none" stroke="currentColor" stroke-width="8"></circle>
-          <path d="M29 73l18-34 13 25 13-25 18 34" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
-        <span>
-          <strong>Jefferson Amateur Radio Club</strong>
-          <small>W5GAD</small>
-        </span>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-        <a href="./index.html">Home</a>
-        <a href="./whatshappening.html">What's Happening</a>
-        <a href="./community.html" aria-current="page">Community</a>
-        <a href="./ourclub.html">Our Club</a>
-        <a href="./equipment.html">Equipment</a>
-        <a href="./education.html">Education</a>
+
+  <!-- Announcement Bar -->
+  <div id="announcement-bar">
+    See <a href="whatshappening.html"><strong>What's Happening calendar</strong></a> for upcoming events.
+    <button id="bar-close" aria-label="Dismiss announcement">&times;</button>
+  </div>
+
+  <!-- Site Header -->
+  <header id="site-header">
+    <div class="header-inner">
+      <div class="site-title">Jefferson Amateur Radio Club &ndash; W5GAD</div>
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="whatshappening.html">What's Happening</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="ourclub.html">Our Club</a></li>
+          <li><a href="equipment.html">Equipment</a></li>
+          <li><a href="education.html">Education</a></li>
+        </ul>
+        <button id="nav-toggle" aria-label="Open menu">&#9776;</button>
       </nav>
     </div>
   </header>
-  <main id="main">
-    <section class="page-hero">
-      <div class="container page-hero-grid">
-        <div>
-          <p class="eyebrow">People and outreach</p>
-          <h1>Community</h1>
-          <p class="lede">A separate page for social links, outreach information, and the public-facing side of the club.</p>
+
+  <!-- Mobile Menu Overlay -->
+  <nav id="mobile-menu" aria-label="Mobile navigation">
+    <button id="mobile-menu-close" aria-label="Close menu">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="whatshappening.html">What's Happening</a>
+    <a href="community.html">Community</a>
+    <a href="ourclub.html">Our Club</a>
+    <a href="equipment.html">Equipment</a>
+    <a href="education.html">Education</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Hero + Carousel split layout -->
+    <div class="full-bleed">
+      <div class="carousel-split">
+
+        <!-- Left: Carousel -->
+        <div class="carousel-wrapper" aria-label="Community photo slideshow">
+          <div class="carousel-track">
+            <div class="carousel-slide">
+              <img src="images/community/slide-1.jpg" alt="Community members working on antennas" />
+            </div>
+            <div class="carousel-slide">
+              <img src="images/community/slide-2.jpg" alt="Community event" />
+            </div>
+            <div class="carousel-slide">
+              <img src="images/community/slide-3.jpg" alt="Ham radio operators at a field event" />
+            </div>
+            <div class="carousel-slide">
+              <img src="images/community/slide-4.jpg" alt="Club activity" />
+            </div>
+            <div class="carousel-slide">
+              <img src="images/community/slide-5.jpg" alt="Club members" />
+            </div>
+          </div>
+          <button class="carousel-btn prev" aria-label="Previous slide">&#8249;</button>
+          <button class="carousel-btn next" aria-label="Next slide">&#8250;</button>
+          <div class="carousel-dots" role="tablist" aria-label="Slide navigation">
+            <button class="carousel-dot active" role="tab" aria-label="Slide 1"></button>
+            <button class="carousel-dot" role="tab" aria-label="Slide 2"></button>
+            <button class="carousel-dot" role="tab" aria-label="Slide 3"></button>
+            <button class="carousel-dot" role="tab" aria-label="Slide 4"></button>
+            <button class="carousel-dot" role="tab" aria-label="Slide 5"></button>
+          </div>
         </div>
-        <aside class="hero-card">
-          <h2>W5GAD</h2>
-          <p class="muted">Traditional static site starter with separate pages, shared styles, and deployment-ready Docker files.</p>
-        </aside>
+
+        <!-- Right: Text -->
+        <div class="carousel-text">
+          <h1>Amateur Radio is About Community Locally and Worldwide</h1>
+          <p>
+            No matter where you are in the world, if you are a ham radio operator,
+            there are more than two million other people out there who share your
+            passion and who you make contact with one day. These connections can be
+            quick &ndash; in the case of contests where the goal is to make the
+            highest number of contacts. Or they can involve extended conversations
+            where you can learn more about radio equipment and, even more
+            fascinating, about the lives and cultures of others.
+          </p>
+          <p>
+            Jefferson ARC invites you to join the local community of our club, and
+            the global community of amateur operators worldwide. Along with
+            camaraderie, organizations like ours provide the resources you need to
+            get the most out of this exciting hobby. For instance, members and
+            non-members alike have access to many different types of services like
+            repeaters and gateways.
+          </p>
+        </div>
+
+      </div><!-- /.carousel-split -->
+    </div>
+
+    <div class="page-content">
+
+      <!-- Community levels section -->
+      <h2 class="mt-48">There are many levels to our community!</h2>
+
+      <div class="accordion mt-16">
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span class="accordion-icon">+</span>
+            Our Club is a place to &hellip;
+          </button>
+          <div class="accordion-body">
+            <!-- PLACEHOLDER: Fill in text about what the club is a place to do -->
+            Lorem ipsum &mdash; describe what the club offers locally as a gathering place,
+            a place to learn, and a place to meet fellow hams.
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span class="accordion-icon">+</span>
+            We serve the Greater New Orleans area by providing &hellip;
+          </button>
+          <div class="accordion-body">
+            <!-- PLACEHOLDER: Fill in text about services to the Greater New Orleans area -->
+            Lorem ipsum &mdash; describe services such as repeaters, gateways, emergency
+            communication support, public education, and license testing.
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span class="accordion-icon">+</span>
+            Operators from all over the world offer &hellip;
+          </button>
+          <div class="accordion-body">
+            <!-- PLACEHOLDER: Fill in text about the global amateur radio community -->
+            Lorem ipsum &mdash; describe the global connections available through ham radio,
+            contests, DXpeditions, and international communication.
+          </div>
+        </div>
       </div>
+
+      <!-- CTA Buttons -->
+      <div class="btn-grid btn-grid-2 mt-32">
+        <a href="PLACEHOLDER_PUBLIC_SERVICES_URL" class="btn btn-black">Public Services for Licensed Operators</a>
+        <a href="education.html" class="btn btn-black">Get Your Technician Class License</a>
+      </div>
+
+    </div><!-- /.page-content -->
+
+    <!-- Membership CTA -->
+    <section class="membership-cta">
+      <h2>With an annual membership of just $36, you gain full access to our range of equipment and enjoy all the perks of being part of our community.</h2>
+      <a href="PLACEHOLDER_JOIN_URL" class="btn btn-black">Join Today</a>
+      <p class="cta-sub">
+        Learn more about membership benefits <a href="ourclub.html#membership" class="link-here">HERE</a>
+      </p>
     </section>
-    
-<section class="section">
-  <div class="container two-col">
-    <div class="text-card">
-      <p class="eyebrow">Community</p>
-      <h2>Public links</h2>
-      <p>Use this page for contact information, public service, community activity, and online channels.</p>
-    </div>
-    <div class="list-card">
-      <ul>
-        <li><a href="https://www.facebook.com/W5GAD" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-        <li><a href="https://www.instagram.com/w5gad/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-        <li><a href="https://www.youtube.com/channel/UCsIPhq_hA06RbbjoW6fPZsQ" target="_blank" rel="noopener noreferrer">YouTube</a></li>
-        <li><a href="https://twitter.com/w5gad" target="_blank" rel="noopener noreferrer">X</a></li>
-      </ul>
-    </div>
-  </div>
-</section>
-<section class="section section-contrast">
-  <div class="container section-panel">
-    <h2>Suggested content</h2>
-    <p>Add meeting location details, public service involvement, member contact instructions, and newcomer information on this page.</p>
-  </div>
-</section>
 
   </main>
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>Jefferson Amateur Radio Club • W5GAD</p>
-      <p>Static site starter for Fly.io and GitHub Pages.</p>
-    </div>
+
+  <!-- Footer -->
+  <footer id="site-footer">
+    <span class="footer-copy">&copy; 2025 Jefferson Amateur Radio Club, Inc.</span>
+    <nav class="footer-social" aria-label="Social media links">
+      <a href="PLACEHOLDER_FACEBOOK_URL" target="_blank" rel="noopener">Facebook</a>
+      <span aria-hidden="true">&bull;</span>
+      <a href="PLACEHOLDER_X_URL" target="_blank" rel="noopener">X</a>
+      <span aria-hidden="true">&bull;</span>
+      <a href="PLACEHOLDER_INSTAGRAM_URL" target="_blank" rel="noopener">Instagram</a>
+      <span aria-hidden="true">&bull;</span>
+      <a href="PLACEHOLDER_YOUTUBE_URL" target="_blank" rel="noopener">Youtube</a>
+    </nav>
   </footer>
-  <script src="./site.js" defer></script>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

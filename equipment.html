@@ -1,78 +1,157 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Equipment • W5GAD</title>
-  <meta name="description" content="Jefferson Amateur Radio Club static site for W5GAD.">
-  <meta name="theme-color" content="#0a5c63">
-  <link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Equipment – Jefferson ARC W5GAD</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="./index.html" aria-label="Jefferson Amateur Radio Club home">
-        <svg viewBox="0 0 120 120" aria-hidden="true" class="brand-mark">
-          <circle cx="60" cy="60" r="52" fill="none" stroke="currentColor" stroke-width="8"></circle>
-          <path d="M29 73l18-34 13 25 13-25 18 34" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
-        <span>
-          <strong>Jefferson Amateur Radio Club</strong>
-          <small>W5GAD</small>
-        </span>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-        <a href="./index.html">Home</a>
-        <a href="./whatshappening.html">What's Happening</a>
-        <a href="./community.html">Community</a>
-        <a href="./ourclub.html">Our Club</a>
-        <a href="./equipment.html" aria-current="page">Equipment</a>
-        <a href="./education.html">Education</a>
+
+  <!-- Announcement Bar -->
+  <div id="announcement-bar">
+    See <a href="whatshappening.html"><strong>What's Happening calendar</strong></a> for upcoming events.
+    <button id="bar-close" aria-label="Dismiss announcement">&times;</button>
+  </div>
+
+  <!-- Site Header -->
+  <header id="site-header">
+    <div class="header-inner">
+      <div class="site-title">Jefferson Amateur Radio Club &ndash; W5GAD</div>
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="whatshappening.html">What's Happening</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="ourclub.html">Our Club</a></li>
+          <li><a href="equipment.html">Equipment</a></li>
+          <li><a href="education.html">Education</a></li>
+        </ul>
+        <button id="nav-toggle" aria-label="Open menu">&#9776;</button>
       </nav>
     </div>
   </header>
-  <main id="main">
-    <section class="page-hero">
-      <div class="container page-hero-grid">
-        <div>
-          <p class="eyebrow">Gear and technical activity</p>
-          <h1>Equipment</h1>
-          <p class="lede">A dedicated page for radios, repeaters, stations, and club technical resources.</p>
+
+  <!-- Mobile Menu Overlay -->
+  <nav id="mobile-menu" aria-label="Mobile navigation">
+    <button id="mobile-menu-close" aria-label="Close menu">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="whatshappening.html">What's Happening</a>
+    <a href="community.html">Community</a>
+    <a href="ourclub.html">Our Club</a>
+    <a href="equipment.html">Equipment</a>
+    <a href="education.html">Education</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+
+    <div class="page-content">
+
+      <h1 class="text-center mb-32">Providing the Equipment you Need to Connect Globally.</h1>
+
+      <!-- Carousel (full-width within content) + intro text side by side on desktop -->
+      <div class="equipment-intro">
+
+        <!-- Left: Full carousel -->
+        <div class="carousel-full">
+          <div class="carousel-wrapper" aria-label="Equipment photo slideshow" style="min-height:360px;">
+            <div class="carousel-track">
+              <div class="carousel-slide">
+                <img src="images/equipment/slide-1.jpg" alt="HF station at the clubhouse" />
+              </div>
+              <div class="carousel-slide">
+                <img src="images/equipment/slide-2.jpg" alt="Antenna tower" />
+              </div>
+              <div class="carousel-slide">
+                <img src="images/equipment/slide-3.jpg" alt="VHF/UHF equipment" />
+              </div>
+              <div class="carousel-slide">
+                <img src="images/equipment/slide-4.jpg" alt="Digital modes equipment" />
+              </div>
+              <div class="carousel-slide">
+                <img src="images/equipment/slide-5.jpg" alt="Equipment setup" />
+              </div>
+              <div class="carousel-slide">
+                <img src="images/equipment/slide-6.jpg" alt="Portable equipment" />
+              </div>
+            </div>
+            <button class="carousel-btn prev" aria-label="Previous slide">&#8249;</button>
+            <button class="carousel-btn next" aria-label="Next slide">&#8250;</button>
+            <div class="carousel-dots" role="tablist" aria-label="Slide navigation">
+              <button class="carousel-dot active" role="tab" aria-label="Slide 1"></button>
+              <button class="carousel-dot" role="tab" aria-label="Slide 2"></button>
+              <button class="carousel-dot" role="tab" aria-label="Slide 3"></button>
+              <button class="carousel-dot" role="tab" aria-label="Slide 4"></button>
+              <button class="carousel-dot" role="tab" aria-label="Slide 5"></button>
+              <button class="carousel-dot" role="tab" aria-label="Slide 6"></button>
+            </div>
+          </div>
         </div>
-        <aside class="hero-card">
-          <h2>W5GAD</h2>
-          <p class="muted">Traditional static site starter with separate pages, shared styles, and deployment-ready Docker files.</p>
-        </aside>
+
+        <!-- Right: Intro text -->
+        <div>
+          <p>
+            Through Jefferson ARC, you'll have access to equipment that meets the
+            needs of any experienced or novice amateur radio operator. We also
+            provide services to any licensed amateur operator in the Greater New
+            Orleans area, including repeaters and gateways for VHF/UHF, D-Star,
+            Winlink, Wires-X, Fusion, and others. These services are available to
+            our members, but also to ham operators through the Greater New Orleans
+            area.
+          </p>
+          <p>
+            Our club operates a station on the Automatic Packet Reporting System
+            (APRS), an amateur radio-based system for real-time digital
+            communications of information of immediate value in the local area.
+            Some of these services are provided in conjunction with the Southeast
+            Louisiana Amateur Radio Club, Inc (SELARC).
+          </p>
+        </div>
+
+      </div><!-- /.equipment-intro -->
+
+      <!-- Equipment link buttons -->
+      <div class="btn-grid btn-grid-3">
+        <a href="PLACEHOLDER_PUBLIC_SERVICES_URL" class="btn btn-black">Public Services for Licensed Operators</a>
+        <a href="PLACEHOLDER_VHF_UHF_URL" class="btn btn-black">VHF/UHF Equipment</a>
+        <a href="PLACEHOLDER_HF_URL" class="btn btn-black">HF Equipment</a>
       </div>
-    </section>
-    
-<section class="section">
-  <div class="container two-col">
-    <div class="text-card">
-      <p class="eyebrow">Equipment</p>
-      <h2>Stations and projects</h2>
-      <p>Use this page for station details, repeater information, field equipment, and project notes.</p>
-    </div>
-    <div class="list-card">
-      <ul>
-        <li>Club station overview.</li>
-        <li>Repeaters and frequencies.</li>
-        <li>Portable and field-day equipment.</li>
-        <li>Workshops and build projects.</li>
-      </ul>
-    </div>
-  </div>
-</section>
+
+      <!-- Donations Section -->
+      <div class="donations-section">
+        <h2>Donations</h2>
+        <p>
+          Jefferson ARC is a 501(3)(c) and we receive a lot of equipment as
+          donations. Some we use, but the rest we sell and put the money into our
+          general operating funds or make planned purchases of other equipment.
+          If you have old gear sitting around gathering dust, think about donating
+          it to us. We also take cash&nbsp;:)
+        </p>
+        <a href="PLACEHOLDER_DONATE_URL" class="btn btn-black mt-16" style="display:inline-block;">Donate Today</a>
+      </div>
+
+    </div><!-- /.page-content -->
 
   </main>
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>Jefferson Amateur Radio Club • W5GAD</p>
-      <p>Static site starter for Fly.io and GitHub Pages.</p>
-    </div>
+
+  <!-- Footer -->
+  <footer id="site-footer">
+    <span class="footer-copy">&copy; 2025 Jefferson Amateur Radio Club, Inc.</span>
+    <nav class="footer-social" aria-label="Social media links">
+      <a href="PLACEHOLDER_FACEBOOK_URL" target="_blank" rel="noopener">Facebook</a>
+      <span aria-hidden="true">&bull;</span>
+      <a href="PLACEHOLDER_X_URL" target="_blank" rel="noopener">X</a>
+      <span aria-hidden="true">&bull;</span>
+      <a href="PLACEHOLDER_INSTAGRAM_URL" target="_blank" rel="noopener">Instagram</a>
+      <span aria-hidden="true">&bull;</span>
+      <a href="PLACEHOLDER_YOUTUBE_URL" target="_blank" rel="noopener">Youtube</a>
+    </nav>
   </footer>
-  <script src="./site.js" defer></script>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

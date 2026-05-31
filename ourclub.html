@@ -1,73 +1,273 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Our Club • W5GAD</title>
-  <meta name="description" content="Jefferson Amateur Radio Club static site for W5GAD.">
-  <meta name="theme-color" content="#0a5c63">
-  <link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Club – Jefferson ARC W5GAD</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="./index.html" aria-label="Jefferson Amateur Radio Club home">
-        <svg viewBox="0 0 120 120" aria-hidden="true" class="brand-mark">
-          <circle cx="60" cy="60" r="52" fill="none" stroke="currentColor" stroke-width="8"></circle>
-          <path d="M29 73l18-34 13 25 13-25 18 34" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
-        <span>
-          <strong>Jefferson Amateur Radio Club</strong>
-          <small>W5GAD</small>
-        </span>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-        <a href="./index.html">Home</a>
-        <a href="./whatshappening.html">What's Happening</a>
-        <a href="./community.html">Community</a>
-        <a href="./ourclub.html" aria-current="page">Our Club</a>
-        <a href="./equipment.html">Equipment</a>
-        <a href="./education.html">Education</a>
+
+  <!-- Announcement Bar -->
+  <div id="announcement-bar">
+    See <a href="whatshappening.html"><strong>What's Happening calendar</strong></a> for upcoming events.
+    <button id="bar-close" aria-label="Dismiss announcement">&times;</button>
+  </div>
+
+  <!-- Site Header -->
+  <header id="site-header">
+    <div class="header-inner">
+      <div class="site-title">Jefferson Amateur Radio Club &ndash; W5GAD</div>
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="whatshappening.html">What's Happening</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="ourclub.html">Our Club</a></li>
+          <li><a href="equipment.html">Equipment</a></li>
+          <li><a href="education.html">Education</a></li>
+        </ul>
+        <button id="nav-toggle" aria-label="Open menu">&#9776;</button>
       </nav>
     </div>
   </header>
-  <main id="main">
-    <section class="page-hero">
-      <div class="container page-hero-grid">
+
+  <!-- Mobile Menu Overlay -->
+  <nav id="mobile-menu" aria-label="Mobile navigation">
+    <button id="mobile-menu-close" aria-label="Close menu">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="whatshappening.html">What's Happening</a>
+    <a href="community.html">Community</a>
+    <a href="ourclub.html">Our Club</a>
+    <a href="equipment.html">Equipment</a>
+    <a href="education.html">Education</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+
+    <div class="page-content">
+
+      <h1 class="text-center mb-32">Great Equipment, Lasting Friendships and Nice Clubhouse</h1>
+
+      <!-- Carousel + About text -->
+      <div class="club-info-grid">
+
+        <!-- Left: Carousel -->
         <div>
-          <p class="eyebrow">About W5GAD</p>
-          <h1>Our Club</h1>
-          <p class="lede">This page is intended for the club mission, meeting details, membership information, and officers.</p>
+          <div class="carousel-wrapper" aria-label="Club photo slideshow" style="min-height:380px;">
+            <div class="carousel-track">
+              <div class="carousel-slide">
+                <img src="images/ourclub/slide-1.jpg" alt="Historic club photo" />
+              </div>
+              <div class="carousel-slide">
+                <img src="images/ourclub/slide-2.jpg" alt="Club members at work" />
+              </div>
+              <div class="carousel-slide">
+                <img src="images/ourclub/slide-3.jpg" alt="Club activity" />
+              </div>
+              <div class="carousel-slide">
+                <img src="images/ourclub/slide-4.jpg" alt="Clubhouse exterior" />
+              </div>
+            </div>
+            <button class="carousel-btn prev" aria-label="Previous slide">&#8249;</button>
+            <button class="carousel-btn next" aria-label="Next slide">&#8250;</button>
+            <div class="carousel-dots" role="tablist" aria-label="Slide navigation">
+              <button class="carousel-dot active" role="tab" aria-label="Slide 1"></button>
+              <button class="carousel-dot" role="tab" aria-label="Slide 2"></button>
+              <button class="carousel-dot" role="tab" aria-label="Slide 3"></button>
+              <button class="carousel-dot" role="tab" aria-label="Slide 4"></button>
+            </div>
+          </div>
+          <a href="PLACEHOLDER_GALLERY_URL" class="btn btn-black btn-block mt-8 photo-gallery-btn">Photo and Video Gallery</a>
         </div>
-        <aside class="hero-card">
-          <h2>W5GAD</h2>
-          <p class="muted">Traditional static site starter with separate pages, shared styles, and deployment-ready Docker files.</p>
-        </aside>
+
+        <!-- Right: About text -->
+        <div>
+          <p>
+            Founded in 1956, Jefferson ARC is a nonprofit 501(c)(3) organization. Our
+            club comprises knowledgeable &ldquo;Elmers&rdquo; (experienced hams willing to
+            help others), newcomers who are just learning and investigating, and
+            everyone in-between.
+          </p>
+          <p>
+            Located just outside New Orleans at the Wally Pontiff Jr. Playground at
+            1521 Palm Street in Metairie, Louisiana, ours is one of only a few
+            full-time clubhouses in South Louisiana with a permanent clubhouse and wide
+            variety of transceivers and antennas for the use of our members.
+            <a href="PLACEHOLDER_LEARN_MORE_URL" class="text-link">Learn more</a>
+          </p>
+          <p>
+            Our club serves the Greater New Orleans amateur radio community by offering
+            camaraderie, equipment, contests, education workshops, and license testing
+            from FCC-authorized Volunteer Examiners. We proudly support emergency
+            organizations by providing email capabilities that don't require internet
+            or cell service, teaching Boy and Girl Scouts interested in radio merit
+            badges, and more.
+          </p>
+          <p>
+            Learn more about our educational workshops and upcoming events on our
+            calendar and in our monthly newsletter. And we invite you to come by the
+            clubhouse during our open houses, most Thursdays from 7&ndash;9PM and most
+            Saturdays from 9AM to noon. Check our
+            <a href="whatshappening.html" class="text-link">events calendar</a> for details.
+          </p>
+          <p>
+            <a href="PLACEHOLDER_FIELD_DAY_RESULTS_URL" class="text-link">Results from 2024 Summer Field Day</a>.
+          </p>
+        </div>
+
+      </div><!-- /.club-info-grid -->
+
+      <!-- Quick Links Buttons -->
+      <div class="btn-grid btn-grid-4">
+        <a href="PLACEHOLDER_ACTIVITIES_URL" class="btn btn-black">Activities by Year</a>
+        <a href="PLACEHOLDER_NEWSLETTER_URL" class="btn btn-black">Newsletter Archives<br><small style="font-weight:400;letter-spacing:0;text-transform:none;">(Ignore Sign In)</small></a>
+        <a href="equipment.html" class="btn btn-black">Our Equipment</a>
+        <a href="PLACEHOLDER_GOVERNANCE_URL" class="btn btn-black">Governance and Finances</a>
       </div>
+
+      <hr class="section-divider" />
+
+      <!-- Membership Benefits -->
+      <div id="membership" class="membership-split">
+
+        <!-- Member Benefits -->
+        <div>
+          <h2>Membership Benefits</h2>
+          <p>
+            If you want to learn about amateur radio, Jefferson ARC is the perfect
+            place to meet experienced hams who can tell you what it is like and how
+            to get started. If you are already a ham and want to take advantage of
+            what the club offers, what are you waiting for?
+          </p>
+
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span class="accordion-icon">+</span>
+                Camaraderie
+              </button>
+              <div class="accordion-body">
+                <!-- PLACEHOLDER: Describe camaraderie benefits -->
+                Lorem ipsum &mdash; describe the social aspect of club membership,
+                friendships formed, and the welcoming community environment.
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span class="accordion-icon">+</span>
+                Use Our Equipment
+              </button>
+              <div class="accordion-body">
+                <!-- PLACEHOLDER: Describe equipment access for members -->
+                Lorem ipsum &mdash; describe member access to HF rigs, VHF/UHF equipment,
+                digital modes, and the fully equipped shack at the clubhouse.
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span class="accordion-icon">+</span>
+                Support the Greater New Orleans Community
+              </button>
+              <div class="accordion-body">
+                <!-- PLACEHOLDER: Describe community service aspects -->
+                Lorem ipsum &mdash; describe ARES/RACES participation, public service
+                events, emergency communications support, and Scout merit badge assistance.
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span class="accordion-icon">+</span>
+                Get Help and Mentoring
+              </button>
+              <div class="accordion-body">
+                <!-- PLACEHOLDER: Describe Elmer mentoring program -->
+                Lorem ipsum &mdash; describe the Elmer program, one-on-one mentoring
+                for new hams, study groups, and hands-on guidance from experienced operators.
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span class="accordion-icon">+</span>
+                Contesting
+              </button>
+              <div class="accordion-body">
+                <!-- PLACEHOLDER: Describe contesting opportunities -->
+                Lorem ipsum &mdash; describe club-organized contest participation,
+                access to club station during contests, and the excitement of competitive
+                operating events.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Non-Member Benefits -->
+        <div>
+          <h2>Non-Member Benefits</h2>
+          <p>We also serve non-members in the greater community</p>
+
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span class="accordion-icon">+</span>
+                Licensing
+              </button>
+              <div class="accordion-body">
+                <!-- PLACEHOLDER: Describe public license exam sessions -->
+                Lorem ipsum &mdash; describe open license exam sessions available to
+                the public, walk-in or scheduled testing, and what to expect.
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span class="accordion-icon">+</span>
+                Repeaters and Gateways
+              </button>
+              <div class="accordion-body">
+                <!-- PLACEHOLDER: Describe public repeater/gateway access -->
+                Lorem ipsum &mdash; describe the repeaters and digital gateways (D-Star,
+                Winlink, Wires-X, Fusion) available to any licensed amateur in the
+                Greater New Orleans area.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.membership-split -->
+
+    </div><!-- /.page-content -->
+
+    <!-- Membership CTA -->
+    <section class="membership-cta">
+      <h2>With an annual membership of just $36, you gain full access to our range of equipment and enjoy all the perks of being part of our community.</h2>
+      <a href="PLACEHOLDER_JOIN_URL" class="btn btn-black">Join Today</a>
     </section>
-    
-<section class="section">
-  <div class="container section-panel">
-    <p class="eyebrow">Our Club</p>
-    <h2>Club information</h2>
-    <div class="table-like">
-      <div class="table-row"><strong>Mission</strong><div>Replace this with the club mission and a short explanation of what W5GAD does in the community.</div></div>
-      <div class="table-row"><strong>Meetings</strong><div>Add where and when the club meets, along with any guest policy.</div></div>
-      <div class="table-row"><strong>Membership</strong><div>Use this row for membership notes, dues, and how prospective members can join.</div></div>
-      <div class="table-row"><strong>Officers</strong><div>Add officer names, roles, and contact instructions if desired.</div></div>
-    </div>
-  </div>
-</section>
 
   </main>
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>Jefferson Amateur Radio Club • W5GAD</p>
-      <p>Static site starter for Fly.io and GitHub Pages.</p>
-    </div>
+
+  <!-- Footer -->
+  <footer id="site-footer">
+    <span class="footer-copy">&copy; 2025 Jefferson Amateur Radio Club, Inc.</span>
+    <nav class="footer-social" aria-label="Social media links">
+      <a href="PLACEHOLDER_FACEBOOK_URL" target="_blank" rel="noopener">Facebook</a>
+      <span aria-hidden="true">&bull;</span>
+      <a href="PLACEHOLDER_X_URL" target="_blank" rel="noopener">X</a>
+      <span aria-hidden="true">&bull;</span>
+      <a href="PLACEHOLDER_INSTAGRAM_URL" target="_blank" rel="noopener">Instagram</a>
+      <span aria-hidden="true">&bull;</span>
+      <a href="PLACEHOLDER_YOUTUBE_URL" target="_blank" rel="noopener">Youtube</a>
+    </nav>
   </footer>
-  <script src="./site.js" defer></script>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

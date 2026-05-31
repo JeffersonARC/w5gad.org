@@ -1,184 +1,144 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Events • Jefferson ARC</title>
-  <meta name="description" content="Events and calendar for Jefferson Amateur Radio Club in Metairie, Louisiana.">
-  <meta name="theme-color" content="#0b5d63">
-  <link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What's Happening – Jefferson ARC W5GAD</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
 
-  <div class="top-strip">
-    <div class="container">
-      <span>See the current public calendar for meetings, activities, and upcoming events.</span>
-    </div>
+  <!-- Announcement Bar -->
+  <div id="announcement-bar">
+    See <a href="whatshappening.html"><strong>What's Happening calendar</strong></a> for upcoming events.
+    <button id="bar-close" aria-label="Dismiss announcement">&times;</button>
   </div>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="./index.html" aria-label="Jefferson Amateur Radio Club home">
-        <svg viewBox="0 0 120 120" aria-hidden="true" class="brand-mark">
-          <circle cx="60" cy="60" r="52" fill="none" stroke="currentColor" stroke-width="8"></circle>
-          <path d="M29 73l18-34 13 25 13-25 18 34" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
-        <span class="brand-copy">
-          <strong>Jefferson Amateur Radio Club</strong>
-          <span>W5GAD</span>
-        </span>
-      </a>
-
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-
-      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-        <a href="./index.html">Home</a>
-        <a href="./whatshappening.html" aria-current="page">What's Happening</a>
-        <a href="./community.html">Community</a>
-        <a href="./ourclub.html">Our Club</a>
-        <a href="./equipment.html">Equipment</a>
-        <a href="./education.html">Education</a>
+  <!-- Site Header -->
+  <header id="site-header">
+    <div class="header-inner">
+      <div class="site-title">Jefferson Amateur Radio Club &ndash; W5GAD</div>
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="whatshappening.html">What's Happening</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="ourclub.html">Our Club</a></li>
+          <li><a href="equipment.html">Equipment</a></li>
+          <li><a href="education.html">Education</a></li>
+        </ul>
+        <button id="nav-toggle" aria-label="Open menu">&#9776;</button>
       </nav>
     </div>
   </header>
 
-  <main id="main">
-    <section class="page-intro">
-      <div class="container">
-        <p class="kicker">What's Happening</p>
-        <h1>Events</h1>
-        <p>
-          Throughout the year, novices and experts benefit from participating in many fun and
-          informative events and activities. The new static design keeps this page centered around
-          the same event-oriented content as the live site.
-        </p>
+  <!-- Mobile Menu Overlay -->
+  <nav id="mobile-menu" aria-label="Mobile navigation">
+    <button id="mobile-menu-close" aria-label="Close menu">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="whatshappening.html">What's Happening</a>
+    <a href="community.html">Community</a>
+    <a href="ourclub.html">Our Club</a>
+    <a href="equipment.html">Equipment</a>
+    <a href="education.html">Education</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+
+    <div class="page-hero">
+      <h1>Events</h1>
+    </div>
+
+    <div class="page-content" style="padding-top: 0;">
+
+      <!-- Mobile: link to Google Calendar instead of iframe -->
+      <div class="calendar-mobile-link">
+        <p>View our full events calendar on Google Calendar:</p>
+        <a
+          href="https://calendar.google.com/calendar/embed?src=c_ec2d4689911d5dca56083b7820b013d4f02665963b21dead0c5e2879b4e6c58b%40group.calendar.google.com&ctz=America%2FChicago"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-black"
+        >View Events Calendar &rarr;</a>
       </div>
-    </section>
 
-    <section class="section">
-      <div class="container three-col">
-        <article class="palette-card teal">
-          <h2>Technical talks</h2>
-          <p>Monthly talks and presentations for members and visitors interested in amateur radio topics.</p>
-        </article>
+      <!-- Desktop/tablet: Google Calendar iframe + sidebar text -->
+      <div class="calendar-layout">
 
-        <article class="palette-card gold">
-          <h2>Hands-on workshops</h2>
-          <p>Workshops on new services, antennas, and other practical operating and station projects.</p>
-        </article>
-
-        <article class="palette-card rust">
-          <h2>Contests and activations</h2>
-          <p>Local, national, and international contests along with field operating opportunities.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container two-col">
-        <article class="content-card">
-          <h2>Club activity</h2>
-          <p>
-            The current live page highlights several recurring event types and uses this page as the
-            main activity hub.
-          </p>
-
-          <ul class="event-list">
-            <li>Monthly technical talks.</li>
-            <li>Hands-on workshops on topics such as installing new services, building antennas, and more.</li>
-            <li>Local, national, and international contests.</li>
-            <li>Field activations in notable places such as The National World War II Museum.</li>
-          </ul>
-
-          <p>
-            In the U.S. alone there are usually several ham contests each week, and the current site
-            points members to an external contest calendar for more detail.
-          </p>
-
-          <div class="hero-actions">
-            <a
-              class="button button-primary"
-              href="https://www.contestcalendar.com/weeklycont.php"
-              target="_blank" rel="noopener noreferrer">Contest Calendar</a>
-          </div>
-        </article>
-
-        <aside class="link-card">
-          <h2>Resources and updates</h2>
-          <p>
-            The live Events page also keeps a membership link and newsletter archive easy to find,
-            so those should remain visible here.
-          </p>
-
-          <ul class="link-list">
-            <li>
-              <a
-                href="https://forms.gle/8mJckWWWo5zsx4kW6"
-                target="_blank" rel="noopener noreferrer">Join Today!</a>
-            </li>
-            <li>
-              <a
-                href="https://docs.google.com/document/d/e/2PACX-1vSXKrYQHya9E-z61vNy4VQc5eg_NjKHBvAOnPNfLy6weVbMB7hHZEQzkYwwn__drVH4kQlUz91m2K4H/pub"
-                target="_blank" rel="noopener noreferrer">Newsletter Archive</a>
-            </li>
-            <li>
-              <a
-                href="https://drive.google.com/drive/folders/1iqIt2eAF8qbzFGz0AWc3VTtNPFVoyPDo?usp=drive_link"
-                target="_blank" rel="noopener noreferrer">Newsletter Archive Folder</a>
-            </li>
-          </ul>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container calendar-card">
-        <h2>What's Happening calendar</h2>
-        <p>
-          This section preserves the embedded public Google Calendar so your event workflow can stay
-          the same even after leaving Framer.
-        </p>
-
-        <iframe
-          src="https://calendar.google.com/calendar/embed?height=700&wkst=1&ctz=America%2FChicago&mode=MONTH&showTitle=0&src=Y19kYmFmNzNlMDQ2ZGQ3YTY5NWQ4NDJkYzMzNGY4NjUxNjczYWExN2ZiNmFmNWY0MmQwN2RjZWE2MmNiZTcyYzAyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y19lYzJkNDY4OTkxMWQ1ZGNhNTYwODNiNzgyMGIwMTNkNGYwMjY2NTk2M2IyMWRlYWQwYzVlMjg3OWI0ZTZjNThiQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y19lNGEyZGU2M2EwNjFiYzhhNjM4YTM0MjA1OWMyMWY5Yzg0MjJhZmJhYmFhM2Q4OWNmNzk5YWVmMzM0YjhhYzdjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23a79b8e&color=%23f4511e&color=%23616161"
-          title="Jefferson Amateur Radio Club calendar"
-          loading="lazy">
-        </iframe>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container cta-card">
-        <div class="cta-strip">
-          <div>
-            <h2>Stay connected</h2>
-            <p>
-              The live site directs visitors to Facebook and YouTube for updates, and this page
-              keeps those social paths easy to reach.
-            </p>
-          </div>
-
-          <div class="hero-actions">
-            <a class="button button-primary" href="https://www.facebook.com/W5GAD" target="_blank" rel="noopener noreferrer">Facebook</a>
-            <a class="button button-secondary" href="https://www.youtube.com/channel/UCsIPhq_hA06RbbjoW6fPZsQ" target="_blank" rel="noopener noreferrer">YouTube</a>
-          </div>
+        <div class="calendar-embed-wrapper">
+          <iframe
+            src="https://calendar.google.com/calendar/embed?src=c_ec2d4689911d5dca56083b7820b013d4f02665963b21dead0c5e2879b4e6c58b%40group.calendar.google.com&ctz=America%2FChicago"
+            title="Jefferson ARC Events Calendar"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
         </div>
-      </div>
+
+        <div class="events-sidebar">
+          <p>
+            Throughout the year, novices and experts benefit from participating in
+            many fun and informative events and activities. It's a chance to share
+            what you know and to give back.
+          </p>
+          <p>
+            Along with training classes for license exams and onsite FCC license
+            testing, you'll find the following on our events calendar:
+          </p>
+          <ul>
+            <li>Monthly technical talks</li>
+            <li>Hands-on workshops on topics such as installing new services, building antennas and more</li>
+            <li>Local, national, and international contests</li>
+            <li>Field activations in fascinating places like The National World War II Museum</li>
+          </ul>
+          <p>
+            In the U.S. alone there are usually several ham contests each week.
+            As a member you can participate in them at the club with our equipment.
+            If we are participating as a club, the contest will be in our Calendar.
+            Other contests can be found <a href="PLACEHOLDER_CONTESTS_URL" class="link-here">HERE</a>.
+          </p>
+          <p>
+            Follow us on
+            <a href="PLACEHOLDER_FACEBOOK_URL" class="text-link" target="_blank" rel="noopener">Facebook</a>,
+            <a href="PLACEHOLDER_X_URL" class="text-link" target="_blank" rel="noopener">X</a> and
+            <a href="PLACEHOLDER_YOUTUBE_URL" class="text-link" target="_blank" rel="noopener">YouTube</a>
+            to get the latest updates and stay connected with us!
+          </p>
+        </div>
+
+      </div><!-- /.calendar-layout -->
+
+    </div><!-- /.page-content -->
+
+    <!-- Membership CTA -->
+    <section class="membership-cta">
+      <h2>With an annual membership of just $36, you gain full access to our range of equipment and enjoy all the perks of being part of our community.</h2>
+      <a href="PLACEHOLDER_JOIN_URL" class="btn btn-black">Join Today!</a>
+      <p class="cta-sub">
+        <a href="PLACEHOLDER_NEWSLETTER_ARCHIVE_URL" class="text-link">Newsletter Archive</a><br>
+        <small>(Ignore Sign In)</small>
+      </p>
     </section>
+
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>© 2026 Jefferson Amateur Radio Club, Inc.</div>
-      <div class="footer-links">
-        <a href="./community.html">Community</a>
-        <a href="./ourclub.html">Our Club</a>
-        <a href="./education.html">Education</a>
-      </div>
-    </div>
+  <!-- Footer -->
+  <footer id="site-footer">
+    <span class="footer-copy">&copy; 2025 Jefferson Amateur Radio Club, Inc.</span>
+    <nav class="footer-social" aria-label="Social media links">
+      <a href="PLACEHOLDER_FACEBOOK_URL" target="_blank" rel="noopener">Facebook</a>
+      <span aria-hidden="true">&bull;</span>
+      <a href="PLACEHOLDER_X_URL" target="_blank" rel="noopener">X</a>
+      <span aria-hidden="true">&bull;</span>
+      <a href="PLACEHOLDER_INSTAGRAM_URL" target="_blank" rel="noopener">Instagram</a>
+      <span aria-hidden="true">&bull;</span>
+      <a href="PLACEHOLDER_YOUTUBE_URL" target="_blank" rel="noopener">Youtube</a>
+    </nav>
   </footer>
 
-  <script src="./site.js" defer></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
