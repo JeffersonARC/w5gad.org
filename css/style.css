@@ -249,7 +249,7 @@ p:last-child { margin-bottom: 0; }
 .page-content {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 40px 24px 60px;
+  padding: 40px 24px 0px;
 }
 
 /* Full-bleed sections (no max-width constraint) */
@@ -559,7 +559,7 @@ p:last-child { margin-bottom: 0; }
    ------------------------------------------------------------ */
 .home-intro {
   text-align: center;
-  padding: 40px 24px;
+  padding: 0px 24px;
   max-width: 680px;
   margin: 0 auto;
 }
@@ -629,8 +629,8 @@ p:last-child { margin-bottom: 0; }
 .membership-cta {
   background: var(--gray-light);
   text-align: center;
-  padding: 60px 24px;
-  margin-top: 60px;
+  padding: 10px 24px;
+  margin-top: 0px;
 }
 
 .membership-cta h2 {
