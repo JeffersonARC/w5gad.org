@@ -12,8 +12,10 @@
 <body>
 
   <!-- Announcement Bar -->
-  <div id="announcement-bar">
-    See <a href="whatshappening.html"><strong>What's Happening calendar</strong></a> for upcoming events.
+  <div id="announcement-bar" class="respect-newlines">
+    Website has been relocated. If you find problmens with missing content, photos, or links, 
+    please email <a href="mailto:w5gad@w5gad.org"><strong>w5gad@w5gad.org</strong></a>.
+  See <a href="whatshappening.html"><strong>What's Happening calendar</strong></a> for upcoming events.
     <button id="bar-close" aria-label="Dismiss announcement">&times;</button>
   </div>
 
@@ -58,38 +60,11 @@
 
         <!-- Left: Full carousel -->
         <div class="carousel-full">
-          <div class="carousel-wrapper" aria-label="Equipment photo slideshow" style="min-height:360px;">
-            <div class="carousel-track">
-              <div class="carousel-slide">
-                <img src="images/equipment/slide-1.jpg" alt="HF station at the clubhouse" />
-              </div>
-              <div class="carousel-slide">
-                <img src="images/equipment/slide-2.jpg" alt="Antenna tower" />
-              </div>
-              <div class="carousel-slide">
-                <img src="images/equipment/slide-3.jpg" alt="VHF/UHF equipment" />
-              </div>
-              <div class="carousel-slide">
-                <img src="images/equipment/slide-4.jpg" alt="Digital modes equipment" />
-              </div>
-              <div class="carousel-slide">
-                <img src="images/equipment/slide-5.jpg" alt="Equipment setup" />
-              </div>
-              <div class="carousel-slide">
-                <img src="images/equipment/slide-6.jpg" alt="Portable equipment" />
-              </div>
-            </div>
-            <button class="carousel-btn prev" aria-label="Previous slide">&#8249;</button>
-            <button class="carousel-btn next" aria-label="Next slide">&#8250;</button>
-            <div class="carousel-dots" role="tablist" aria-label="Slide navigation">
-              <button class="carousel-dot active" role="tab" aria-label="Slide 1"></button>
-              <button class="carousel-dot" role="tab" aria-label="Slide 2"></button>
-              <button class="carousel-dot" role="tab" aria-label="Slide 3"></button>
-              <button class="carousel-dot" role="tab" aria-label="Slide 4"></button>
-              <button class="carousel-dot" role="tab" aria-label="Slide 5"></button>
-              <button class="carousel-dot" role="tab" aria-label="Slide 6"></button>
-            </div>
-          </div>
+          
+        <div class="carousel-wrapper"
+            data-image-folder="images/carousels/equipment"
+            aria-label="Equipment photo slideshow">
+        </div> 
         </div>
 
         <!-- Right: Intro text -->
@@ -140,13 +115,9 @@
 
   <!-- Footer -->
   <footer id="site-footer">
-    <span class="footer-copy">&copy; 2025 Jefferson Amateur Radio Club, Inc.</span>
+    <span class="footer-copy">&copy; 2026 Jefferson Amateur Radio Club, Inc.</span>
     <nav class="footer-social" aria-label="Social media links">
       <a href="PLACEHOLDER_FACEBOOK_URL" target="_blank" rel="noopener">Facebook</a>
-      <span aria-hidden="true">&bull;</span>
-      <a href="PLACEHOLDER_X_URL" target="_blank" rel="noopener">X</a>
-      <span aria-hidden="true">&bull;</span>
-      <a href="PLACEHOLDER_INSTAGRAM_URL" target="_blank" rel="noopener">Instagram</a>
       <span aria-hidden="true">&bull;</span>
       <a href="PLACEHOLDER_YOUTUBE_URL" target="_blank" rel="noopener">Youtube</a>
     </nav>

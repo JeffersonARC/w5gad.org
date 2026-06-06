@@ -12,8 +12,10 @@
 <body>
 
   <!-- Announcement Bar -->
-  <div id="announcement-bar">
-    See <a href="whatshappening.html"><strong>What's Happening calendar</strong></a> for upcoming events.
+  <div id="announcement-bar" class="respect-newlines">
+    Website has been relocated. If you find problmens with missing content, photos, or links, 
+    please email <a href="mailto:w5gad@w5gad.org"><strong>w5gad@w5gad.org</strong></a>.
+  See <a href="whatshappening.html"><strong>What's Happening calendar</strong></a> for upcoming events.
     <button id="bar-close" aria-label="Dismiss announcement">&times;</button>
   </div>
 
@@ -58,31 +60,11 @@
 
         <!-- Left: Carousel -->
         <div>
-          <div class="carousel-wrapper" aria-label="Club photo slideshow" style="min-height:380px;">
-            <div class="carousel-track">
-              <div class="carousel-slide">
-                <img src="images/ourclub/slide-1.jpg" alt="Historic club photo" />
-              </div>
-              <div class="carousel-slide">
-                <img src="images/ourclub/slide-2.jpg" alt="Club members at work" />
-              </div>
-              <div class="carousel-slide">
-                <img src="images/ourclub/slide-3.jpg" alt="Club activity" />
-              </div>
-              <div class="carousel-slide">
-                <img src="images/ourclub/slide-4.jpg" alt="Clubhouse exterior" />
-              </div>
-            </div>
-            <button class="carousel-btn prev" aria-label="Previous slide">&#8249;</button>
-            <button class="carousel-btn next" aria-label="Next slide">&#8250;</button>
-            <div class="carousel-dots" role="tablist" aria-label="Slide navigation">
-              <button class="carousel-dot active" role="tab" aria-label="Slide 1"></button>
-              <button class="carousel-dot" role="tab" aria-label="Slide 2"></button>
-              <button class="carousel-dot" role="tab" aria-label="Slide 3"></button>
-              <button class="carousel-dot" role="tab" aria-label="Slide 4"></button>
-            </div>
-          </div>
-          <a href="PLACEHOLDER_GALLERY_URL" class="btn btn-black btn-block mt-8 photo-gallery-btn">Photo and Video Gallery</a>
+          
+          <div class="carousel-wrapper"
+              data-image-folder="images/carousels/ourclub"
+              aria-label="Community photo slideshow">
+          </div> 
         </div>
 
         <!-- Right: About text -->
@@ -245,7 +227,12 @@
       </div><!-- /.membership-split -->
 
     </div><!-- /.page-content -->
-
+    <div class="page-content">
+      <div class="carousel-wrapper"
+          data-image-folder="images/carousels/history"
+          aria-label="History photo slideshow">
+      </div>
+    </div>
     <!-- Membership CTA -->
     <section class="membership-cta">
       <h2>With an annual membership of just $36, you gain full access to our range of equipment and enjoy all the perks of being part of our community.</h2>
@@ -256,18 +243,15 @@
 
   <!-- Footer -->
   <footer id="site-footer">
-    <span class="footer-copy">&copy; 2025 Jefferson Amateur Radio Club, Inc.</span>
+    <span class="footer-copy">&copy; 2026 Jefferson Amateur Radio Club, Inc.</span>
     <nav class="footer-social" aria-label="Social media links">
       <a href="PLACEHOLDER_FACEBOOK_URL" target="_blank" rel="noopener">Facebook</a>
-      <span aria-hidden="true">&bull;</span>
-      <a href="PLACEHOLDER_X_URL" target="_blank" rel="noopener">X</a>
-      <span aria-hidden="true">&bull;</span>
-      <a href="PLACEHOLDER_INSTAGRAM_URL" target="_blank" rel="noopener">Instagram</a>
       <span aria-hidden="true">&bull;</span>
       <a href="PLACEHOLDER_YOUTUBE_URL" target="_blank" rel="noopener">Youtube</a>
     </nav>
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/carousel-github.js"></script>
 </body>
 </html>

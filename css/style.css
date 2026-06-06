@@ -249,12 +249,13 @@ p:last-child { margin-bottom: 0; }
 .page-content {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 40px 24px 0px;
+  padding: 20px 24px 0px;
 }
 
 /* Full-bleed sections (no max-width constraint) */
 .full-bleed {
-  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 /* ------------------------------------------------------------
@@ -374,10 +375,6 @@ p:last-child { margin-bottom: 0; }
   margin-bottom: 0;
 }
 
-.carousel-split .carousel-wrapper {
-  /* fills left column */
-}
-
 .carousel-split .carousel-text {
   padding: 40px 32px;
   display: flex;
@@ -387,7 +384,7 @@ p:last-child { margin-bottom: 0; }
 
 /* Full-width carousel (equipment page) */
 .carousel-full .carousel-wrapper {
-  height: 420px;
+  max-height: 600px;
 }
 
 /* Carousel track */
@@ -455,7 +452,7 @@ p:last-child { margin-bottom: 0; }
 
 /* Split carousel: set explicit heights */
 .carousel-split .carousel-wrapper {
-  min-height: 420px;
+  max-height: 600px;
 }
 
 /* ------------------------------------------------------------
@@ -659,7 +656,6 @@ p:last-child { margin-bottom: 0; }
    What's Happening Page
    ------------------------------------------------------------ */
 .calendar-layout {
-  display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 40px;
   align-items: start;
@@ -874,11 +870,11 @@ p:last-child { margin-bottom: 0; }
   }
 
   .carousel-split .carousel-wrapper {
-    min-height: 280px;
+    max-height: 600px;
   }
 
   .carousel-full .carousel-wrapper {
-    height: 280px;
+    max-height: 600px;
   }
 
   /* Calendar: hide iframe, show link */
@@ -950,4 +946,7 @@ p:last-child { margin-bottom: 0; }
     text-align: center;
     gap: 8px;
   }
+}
+.respect-newlines {
+  white-space: pre-wrap;
 }

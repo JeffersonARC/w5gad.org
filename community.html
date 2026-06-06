@@ -12,8 +12,10 @@
 <body>
 
   <!-- Announcement Bar -->
-  <div id="announcement-bar">
-    See <a href="whatshappening.html"><strong>What's Happening calendar</strong></a> for upcoming events.
+  <div id="announcement-bar" class="respect-newlines">
+    Website has been relocated. If you find problmens with missing content, photos, or links, 
+    please email <a href="mailto:w5gad@w5gad.org"><strong>w5gad@w5gad.org</strong></a>.
+  See <a href="whatshappening.html"><strong>What's Happening calendar</strong></a> for upcoming events.
     <button id="bar-close" aria-label="Dismiss announcement">&times;</button>
   </div>
 
@@ -54,34 +56,11 @@
       <div class="carousel-split">
 
         <!-- Left: Carousel -->
-        <div class="carousel-wrapper" aria-label="Community photo slideshow">
-          <div class="carousel-track">
-            <div class="carousel-slide">
-              <img src="images/community/slide-1.jpg" alt="Community members working on antennas" />
-            </div>
-            <div class="carousel-slide">
-              <img src="images/community/slide-2.jpg" alt="Community event" />
-            </div>
-            <div class="carousel-slide">
-              <img src="images/community/slide-3.jpg" alt="Ham radio operators at a field event" />
-            </div>
-            <div class="carousel-slide">
-              <img src="images/community/slide-4.jpg" alt="Club activity" />
-            </div>
-            <div class="carousel-slide">
-              <img src="images/community/slide-5.jpg" alt="Club members" />
-            </div>
-          </div>
-          <button class="carousel-btn prev" aria-label="Previous slide">&#8249;</button>
-          <button class="carousel-btn next" aria-label="Next slide">&#8250;</button>
-          <div class="carousel-dots" role="tablist" aria-label="Slide navigation">
-            <button class="carousel-dot active" role="tab" aria-label="Slide 1"></button>
-            <button class="carousel-dot" role="tab" aria-label="Slide 2"></button>
-            <button class="carousel-dot" role="tab" aria-label="Slide 3"></button>
-            <button class="carousel-dot" role="tab" aria-label="Slide 4"></button>
-            <button class="carousel-dot" role="tab" aria-label="Slide 5"></button>
-          </div>
-        </div>
+        <!-- community.html -->
+        <div class="carousel-wrapper"
+            data-image-folder="images/carousels/community"
+            aria-label="Community photo slideshow">
+        </div> 
 
         <!-- Right: Text -->
         <div class="carousel-text">
@@ -111,7 +90,7 @@
     <div class="page-content">
 
       <!-- Community levels section -->
-      <h2 class="mt-48">There are many levels to our community!</h2>
+      <h2 ">There are many levels to our community!</h2>
 
       <div class="accordion mt-16">
         <div class="accordion-item">
@@ -172,16 +151,15 @@
 
   <!-- Footer -->
   <footer id="site-footer">
-    <span class="footer-copy">&copy; 2025 Jefferson Amateur Radio Club, Inc.</span>
+    <span class="footer-copy">&copy; 2026 Jefferson Amateur Radio Club, Inc.</span>
     <nav class="footer-social" aria-label="Social media links">
       <a href="PLACEHOLDER_FACEBOOK_URL" target="_blank" rel="noopener">Facebook</a>
-      <span aria-hidden="true">&bull;</span>
-      <a href="PLACEHOLDER_X_URL" target="_blank" rel="noopener">X</a>
       <span aria-hidden="true">&bull;</span>
       <a href="PLACEHOLDER_YOUTUBE_URL" target="_blank" rel="noopener">Youtube</a>
     </nav>
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/carousel-github.js"></script>
 </body>
 </html>

@@ -17,8 +17,8 @@
    ============================================================ */
 
 /* ---- YOUR REPO DETAILS — edit these two lines ---- */
-const GITHUB_USER = 'YOUR_GITHUB_USERNAME';
-const GITHUB_REPO = 'YOUR_REPO_NAME';
+const GITHUB_USER = 'JeffersonARC';
+const GITHUB_REPO = 'w5gad.org';
 /* -------------------------------------------------- */
 
 (function () {
@@ -28,6 +28,7 @@ const GITHUB_REPO = 'YOUR_REPO_NAME';
   const IMAGE_EXTS = /\.(jpe?g|png|webp|gif)$/i;
 
   /* Build the GitHub Contents API URL for a folder path */
+  // https://api.github.com/repos/gitw5gadorg/w5gad.org/contents/images/carousels/community
   function apiUrl(folder) {
     return 'https://api.github.com/repos/'
       + GITHUB_USER + '/' + GITHUB_REPO
