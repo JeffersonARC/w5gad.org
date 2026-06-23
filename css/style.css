@@ -375,6 +375,43 @@ p:last-child { margin-bottom: 0; }
   margin-bottom: 0;
 }
 
+/* Split layout: left=carousel, right=text */
+.carousel-split3 {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 0;
+}
+
+.carousel-split3 .carousel-wrapper {
+  flex: 45;
+  min-height: 300px;
+}
+
+.carousel-split3 .hero-image {
+  flex: 55;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.carousel-split3 .hero-image img {
+  flex:90
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-split3 .hero-image p {
+  flex:10;
+  margin-top: 8px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--black-text);
+}
+
 .carousel-split .carousel-text {
   padding: 40px 32px;
   display: flex;
