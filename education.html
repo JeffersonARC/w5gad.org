@@ -12,13 +12,7 @@
 <body>
 
   <!-- Announcement Bar -->
-  <div id="announcement-bar" class="respect-newlines">
-    Website has been relocated. If you find problmens with missing content, photos, or links, 
-    please email <a href="mailto:w5gad@w5gad.org"><strong>w5gad@w5gad.org</strong></a>.
-  See <a href="whatshappening.html"><strong>What's Happening calendar</strong></a> for upcoming events.
-    <button id="bar-close" aria-label="Dismiss announcement">&times;</button>
-  </div>
-
+  <div data-include="announcement.html"></div>
   <!-- Site Header -->
   <header id="site-header">
     <div class="header-inner">
@@ -164,17 +158,13 @@
 
     </div><!-- /.page-content -->
 
+    <div data-include="join.html"></div>
+
   </main>
 
   <!-- Footer -->
-  <footer id="site-footer">
-    <span class="footer-copy">&copy; 2026 Jefferson Amateur Radio Club, Inc.</span>
-    <nav class="footer-social" aria-label="Social media links">
-      <a href="PLACEHOLDER_FACEBOOK_URL" target="_blank" rel="noopener">Facebook</a>
-      <span aria-hidden="true">&bull;</span>
-      <a href="PLACEHOLDER_YOUTUBE_URL" target="_blank" rel="noopener">Youtube</a>
-    </nav>
-  </footer>
+  
+  <div data-include="footer.html"></div> 
 
   <script src="js/main.js"></script>
 </body>

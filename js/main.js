@@ -8,6 +8,26 @@
   /* ----------------------------------------------------------
      Announcement Bar – dismiss for session only
      ---------------------------------------------------------- */
+  document.querySelectorAll('[data-include]').forEach(async el => {
+  const url = el.getAttribute('data-include');
+  const html = await fetch(url).then(r => r.text());
+  el.innerHTML = html;
+
+  const bar = document.getElementById('announcement-bar');
+  const barClose = document.getElementById('bar-close');
+
+  if (bar && barClose) {
+    // Already dismissed this session?
+    if (sessionStorage.getItem('barDismissed') === '1') {
+      bar.classList.add('hidden');
+    }
+
+    barClose.addEventListener('click', function () {
+      bar.classList.add('hidden');
+      sessionStorage.setItem('barDismissed', '1');
+    });
+  }
+});
   const bar = document.getElementById('announcement-bar');
   const barClose = document.getElementById('bar-close');
 

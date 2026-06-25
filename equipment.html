@@ -12,12 +12,7 @@
 <body>
 
   <!-- Announcement Bar -->
-  <div id="announcement-bar" class="respect-newlines">
-    Website has been relocated. If you find problmens with missing content, photos, or links, 
-    please email <a href="mailto:w5gad@w5gad.org"><strong>w5gad@w5gad.org</strong></a>.
-  See <a href="whatshappening.html"><strong>What's Happening calendar</strong></a> for upcoming events.
-    <button id="bar-close" aria-label="Dismiss announcement">&times;</button>
-  </div>
+  <div data-include="announcement.html"></div>
 
   <!-- Site Header -->
   <header id="site-header">
@@ -106,23 +101,20 @@
           If you have old gear sitting around gathering dust, think about donating
           it to us. We also take cash&nbsp;:)
         </p>
-        <a href="https://web.archive.org/web/20250209121342/https://docs.google.com/document/d/e/2PACX-1vTlylwVBYJF2GjHGziUPuvoHl7o4VB5XWm2cQcEnuOnwP-rbXKn3vj6qd-BWBZnuv241XVt7AWGRaT9/pub" class="btn btn-black mt-16" style="display:inline-block;">Donate Today</a>
+        <a href="https://docs.google.com/document/d/e/2PACX-1vTlylwVBYJF2GjHGziUPuvoHl7o4VB5XWm2cQcEnuOnwP-rbXKn3vj6qd-BWBZnuv241XVt7AWGRaT9/pub" class="btn btn-black mt-16" style="display:inline-block;">Donate Today</a>
       </div>
 
     </div><!-- /.page-content -->
 
+    <div data-include="join.html"></div>
+
   </main>
 
   <!-- Footer -->
-  <footer id="site-footer">
-    <span class="footer-copy">&copy; 2026 Jefferson Amateur Radio Club, Inc.</span>
-    <nav class="footer-social" aria-label="Social media links">
-      <a href="PLACEHOLDER_FACEBOOK_URL" target="_blank" rel="noopener">Facebook</a>
-      <span aria-hidden="true">&bull;</span>
-      <a href="PLACEHOLDER_YOUTUBE_URL" target="_blank" rel="noopener">Youtube</a>
-    </nav>
-  </footer>
+  
+  <div data-include="footer.html"></div> 
 
   <script src="js/main.js"></script>
+  <script src="js/carousel-github.js"></script>
 </body>
 </html>

@@ -15,13 +15,7 @@
        Announcement Bar
        ===================================================== -->
   <!-- Announcement Bar -->
-  <div id="announcement-bar" class="respect-newlines">
-    ARRL Field Day is this Saturday and Sunday, June 27, 28. 
-    We need members to help with operating, setup, teardown, and other tasks.
-    Please contact <a href="mailto:w5gad@w5gad.org"><strong>w5gad@w5gad.org</strong></a> if you can help.
-  See <a href="whatshappening.html"><strong>What's Happening calendar</strong></a> for upcoming events.
-    <button id="bar-close" aria-label="Dismiss announcement">&times;</button>
-  </div>
+   <div data-include="announcement.html"></div>
 
   <!-- =====================================================
        Site Header
@@ -57,80 +51,72 @@
   <!-- =====================================================
        Main Content
        ===================================================== -->
-  <main>
+  <main> 
 
-    <!-- Navigation Tiles -->
-    <div class="page-content" style="padding-top:0;">
-      <div class="nav-tiles-desktop">
+    <!-- Hero + Carousel split layout -->
+    <div class="full-bleed">
+      <div class="carousel-split3">
 
-        <!-- Left column -->
-        <div class="col-side">
-          <a href="whatshappening.html" class="nav-tile">
-            <img src="images/tile-whatshappening.jpg" alt="What's Happening" />
-          </a>
-          <a href="equipment.html" class="nav-tile">
-            <img src="images/tile-equipment.jpg" alt="Our Equipment" />
-          </a>
-        </div>
+        <!-- Left: Carousel -->
+        <!-- home.html -->
+        <div class="carousel-wrapper"
+            data-image-folder="images/carousels/home"
+            aria-label="Jefferson ARC photo slideshow">
+        </div> 
 
-        <!-- Center (featured) -->
-        <a href="ourclub.html" class="nav-tile tile-center">
+        <!-- right: image -->
+         <div class="hero-image">
           <img src="images/tile-center-main.jpg" alt="Jefferson ARC members" />
-        </a>
+          <p class="hero-caption">photos at left: 2026 Field Day</p>
+         </div>
+        
 
-        <!-- Right column -->
-        <div class="col-side">
-          <a href="ourclub.html" class="nav-tile">
-            <img src="images/tile-ourclub.jpg" alt="About Our Club" />
-          </a>
-          <a href="education.html" class="nav-tile">
-            <img src="images/tile-education.jpg" alt="Educational Opportunities" />
-          </a>
+      </div><!-- /.carousel-split -->
+    </div>
+
+    <div class="full-bleed quick-links-wrapper">
+      <h1>Quick links to valuable information:</h1>
+      <div class="quick-links">
+        <div class="ql-left item">
+          <ul>
+            <li><a class="classic-link" href="https://w5gad.org/whatshappening.html">club calendar</a></li>
+            <li><a class="classic-link" href="https://docs.google.com/document/d/e/2PACX-1vSQCZFhQoAKEtb3L3m40ezznraCISzZ6rtkMWLv84hq0dSjxK5Z512jBkIMsxOtvwDppB_6T6SVywUQ/pub">new member handbook</a></li>
+            <li><a class="classic-link" href="ourclub.html">about our club</a></li>
+            <li><a class="classic-link" href="https://docs.google.com/document/d/e/2PACX-1vSXKrYQHya9E-z61vNy4VQc5eg_NjKHBvAOnPNfLy6weVbMB7hHZEQzkYwwn__drVH4kQlUz91m2K4H/pub">newsletter archives</a></li>
+            <li><a class="classic-link" href="https://docs.google.com/document/d/e/2PACX-1vT0VjCB0f_J3QspD6QC0iwK97UcWaT0wKBWPVxn0r-w3OfZItqpAyIMHvQHcezR-3nA6ssXbszae7aH/pub">past club activities</a></li>
+            <li><a class="classic-link" href="https://docs.google.com/document/d/e/2PACX-1vSpJnlMie-XZrrciFLWdxBV7GKExPMI0bhTsbT3_eXTpbYAVG9WqJhppjG4ePLGAeyO9MWhpZlg2vAc/pub">join our club</a></li>
+          </ul>
         </div>
-
+        <div class="ql-center item">
+          <ul>
+            <li><a class="classic-link" href="https://docs.google.com/document/d/e/2PACX-1vStmCDJ8KT3BSuQLz5i5OSjh7vV4ysR_vH9UoFynXpR4WaT2-bajZAx4lZ2RVOOaZ2llrVK7uNwyMIK/pub">slides from educational talks</a></li>
+            <li><a class="classic-link" href="https://docs.google.com/document/d/e/2PACX-1vTBIch-jJouBq4KXNqMliFClWhfaZqkYv8rDcEpnGJEyp7hPaZqLtvSqIUaPusceeDJjN00fRT58fIU/pub">our Repeaters</a></li>
+            <li><a class="classic-link" href="https://docs.google.com/document/d/e/2PACX-1vQEhxvr1u2O387h9i4LlJl28_yARiN2wcNYGhjWoOSv2rxiLI8qoElMUtr8vPXXPPSfm7uTxHHi0GAM/pub">VHF/UHF equipment for members</a></li>
+            <li><a class="classic-link" href="https://docs.google.com/document/d/e/2PACX-1vSRiBXuaeFB-mBq1FKPU20PgBxN8udQ2aE3mkzJ62aI21Li3NOOkatM-Xo9Nrxkn3xdwDN2rTZ7yFcE/pub">HF equipment for members</a></li>
+            <li><a class="classic-link" href="https://docs.google.com/document/d/e/2PACX-1vTlylwVBYJF2GjHGziUPuvoHl7o4VB5XWm2cQcEnuOnwP-rbXKn3vj6qd-BWBZnuv241XVt7AWGRaT9/pub">donate to our 501(c)(3)</a></li>
+            <li><a class="classic-link" href="community.html">it's about COMMUNITY</a></li>
+          </ul>
+        </div>
+        <div class="ql-right item">
+          <ul>
+            <li><a class="classic-link" href="https://docs.google.com/document/d/e/2PACX-1vQ8RIECtsuBNFgzPCizCThJBWGQKHAbGHcJxZPM87SXUUnJQ0CXHNRiU7cYUGSEa5hQnbtXbc1Z1HrY/pub"> get your license NOW!</a></li>
+            <li><a class="classic-link" href="https://docs.google.com/document/d/e/2PACX-1vTh-81iBIUrBuRfo0e9jJMxn-xduMWwy4KzEFyYEsMsgf7-3cfSPEdDiTKozc3Ib3vOducNfku6e0oX/pub">Beginner's Guide to Ham Radio</a></li>
+            <li><a class="classic-link" href="https://www.contestcalendar.com/weeklycont.php">contest calendar</a></li>
+            <li><a class="classic-link" href="https://facebook.com/w5gad">club Facebook</a></li>
+            <li><a class="classic-link" href="https://www.facebook.com/search/top?q=louisiana%20qso%20party">Louisiana QSO Party Facebook group</a></li>
+          </ul>
+        </div>
       </div>
     </div>
     
-    <!-- Intro text -->
-    <div class="home-intro">
-      <h1>Jefferson ARC: Join the Community</h1>
-      <p>
-        Jefferson ARC fosters the craft and technology of amateur radio through
-        mentorship and camaraderie among radio amateurs. We offer education and
-        testing for new and existing operators and serve the community by supporting
-        local emergency responders and providing education to the general public.
-        Want to get involved?
-        <a href="https://docs.google.com/document/d/1yk4-dGI7it45j2p8jyAuyUT0SCs4ic_mBzoGz-Up-8s/edit?usp=sharing" class="text-link">Here's our Beginner's Guide to Amateur Radio</a>
-      </p>
-      <p style="margin-top:8px;">
-        For new members or those considering joining, check out our
-        <a href="https://docs.google.com/document/d/e/2PACX-1vSQCZFhQoAKEtb3L3m40ezznraCISzZ6rtkMWLv84hq0dSjxK5Z512jBkIMsxOtvwDppB_6T6SVywUQ/pub" class="text-link">New Member Handbook</a>.
-      </p>
-    </div>
 
-    <!-- Membership CTA -->
-    <section class="membership-cta">
-      <h2>With an annual membership of just $36, you gain full access to our range of equipment and enjoy all the perks of being part of our community.</h2>
-      <a href="https://docs.google.com/document/d/e/2PACX-1vSpJnlMie-XZrrciFLWdxBV7GKExPMI0bhTsbT3_eXTpbYAVG9WqJhppjG4ePLGAeyO9MWhpZlg2vAc/pub" class="btn btn-black">Join Today</a>
-      <p class="cta-sub">
-        Learn more about membership benefits <a href="ourclub.html#membership" class="link-here">HERE</a>
-      </p>
-    </section>
+    <div data-include="join.html"></div>
 
   </main>
 
-  <!-- =====================================================
-       Footer
-       ===================================================== -->
-  <footer id="site-footer">
-    <span class="footer-copy">&copy; 2026 Jefferson Amateur Radio Club, Inc.</span>
-    <nav class="footer-social" aria-label="Social media links">
-      <a href="PLACEHOLDER_FACEBOOK_URL" target="_blank" rel="noopener">Facebook</a>
-      <span aria-hidden="true">&bull;</span>
-      <a href="PLACEHOLDER_YOUTUBE_URL" target="_blank" rel="noopener">Youtube</a>
-    </nav>
-  </footer>
+  <div data-include="footer.html"></div>
 
   <script src="js/main.js"></script>
+  <script src="js/carousel-github.js"></script>
 </body>
 </html>

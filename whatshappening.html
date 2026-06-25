@@ -12,13 +12,7 @@
 <body>
 
   <!-- Announcement Bar -->
-  <div id="announcement-bar" class="respect-newlines">
-    Website has been relocated. If you find problmens with missing content, photos, or links, 
-    please email <a href="mailto:w5gad@w5gad.org"><strong>w5gad@w5gad.org</strong></a>.
-  See <a href="whatshappening.html"><strong>What's Happening calendar</strong></a> for upcoming events.
-    <button id="bar-close" aria-label="Dismiss announcement">&times;</button>
-  </div>
-
+  <div data-include="announcement.html"></div>
   <!-- Site Header -->
   <header id="site-header">
     <div class="header-inner">
@@ -104,8 +98,8 @@
           </p>
           <p>
             Follow us on
-            <a href="PLACEHOLDER_FACEBOOK_URL" class="text-link" target="_blank" rel="noopener">Facebook</a>,
-            <a href="PLACEHOLDER_YOUTUBE_URL" class="text-link" target="_blank" rel="noopener">YouTube</a>
+            <a href="https://facebook.com/w5gad" class="text-link" target="_blank" rel="noopener">Facebook</a>,
+            <a href="https://youtube.com/@jeffersonamateurradioclub6776?si=th5Szod8JrqgGlU4" class="text-link" target="_blank" rel="noopener">YouTube</a>
             to get the latest updates and stay connected with us!
           </p>
         </div>
@@ -115,26 +109,14 @@
     </div><!-- /.page-content -->
 
     <!-- Membership CTA -->
-    <section class="membership-cta">
-      <h2>With an annual membership of just $36, you gain full access to our range of equipment and enjoy all the perks of being part of our community.</h2>
-      <a href="PLACEHOLDER_JOIN_URL" class="btn btn-black">Join Today!</a>
-      <p class="cta-sub">
-        <a href="PLACEHOLDER_NEWSLETTER_ARCHIVE_URL" class="text-link">Newsletter Archive</a><br>
-        <small>(Ignore Sign In)</small>
-      </p>
-    </section>
+    
+    <div data-include="join.html"></div> 
 
   </main>
 
   <!-- Footer -->
-  <footer id="site-footer">
-    <span class="footer-copy">&copy; 2026 Jefferson Amateur Radio Club, Inc.</span>
-    <nav class="footer-social" aria-label="Social media links">
-      <a href="PLACEHOLDER_FACEBOOK_URL" target="_blank" rel="noopener">Facebook</a>
-      <span aria-hidden="true">&bull;</span>
-      <a href="PLACEHOLDER_YOUTUBE_URL" target="_blank" rel="noopener">Youtube</a>
-    </nav>
-  </footer>
+  
+  <div data-include="footer.html"></div> 
 
   <script src="js/main.js"></script>
 </body>

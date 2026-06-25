@@ -12,12 +12,7 @@
 <body>
 
   <!-- Announcement Bar -->
-  <div id="announcement-bar" class="respect-newlines">
-    Website has been relocated. If you find problmens with missing content, photos, or links, 
-    please email <a href="mailto:w5gad@w5gad.org"><strong>w5gad@w5gad.org</strong></a>.
-  See <a href="whatshappening.html"><strong>What's Happening calendar</strong></a> for upcoming events.
-    <button id="bar-close" aria-label="Dismiss announcement">&times;</button>
-  </div>
+  <div data-include="announcement.html"></div>
 
   <!-- Site Header -->
   <header id="site-header">
@@ -64,6 +59,11 @@
           <div class="carousel-wrapper"
               data-image-folder="images/carousels/ourclub"
               aria-label="Community photo slideshow">
+          </div>
+          
+          <div class="carousel-wrapper"
+              data-image-folder="images/carousels/history"
+              aria-label="History photo slideshow">
           </div> 
         </div>
 
@@ -97,6 +97,8 @@
             Saturdays from 9AM to noon. Check our
             <a href="whatshappening.html" class="text-link">events calendar</a> for details.
           </p>
+          <p class="hero-caption">photos at left above: today</p>
+          <p class="hero-caption">photos at left below: from the past SEVEN decades</p>
         </div>
 
       </div><!-- /.club-info-grid -->
@@ -231,22 +233,14 @@
       </div>
     </div>
     <!-- Membership CTA -->
-    <section class="membership-cta">
-      <h2>With an annual membership of just $36, you gain full access to our range of equipment and enjoy all the perks of being part of our community.</h2>
-      <a href="PLACEHOLDER_JOIN_URL" class="btn btn-black">Join Today</a>
-    </section>
+    
+    <div data-include="join.html"></div> 
 
   </main>
 
   <!-- Footer -->
-  <footer id="site-footer">
-    <span class="footer-copy">&copy; 2026 Jefferson Amateur Radio Club, Inc.</span>
-    <nav class="footer-social" aria-label="Social media links">
-      <a href="PLACEHOLDER_FACEBOOK_URL" target="_blank" rel="noopener">Facebook</a>
-      <span aria-hidden="true">&bull;</span>
-      <a href="PLACEHOLDER_YOUTUBE_URL" target="_blank" rel="noopener">Youtube</a>
-    </nav>
-  </footer>
+
+  <div data-include="footer.html"></div>
 
   <script src="js/main.js"></script>
   <script src="js/carousel-github.js"></script>
