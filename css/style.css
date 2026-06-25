@@ -728,6 +728,12 @@ p:last-child { margin-bottom: 0; }
   line-height: 1.65;
 }
 
+.accordion-body ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0 0 16px;
+}
+
 .accordion-item.open .accordion-body {
   display: block;
 }
