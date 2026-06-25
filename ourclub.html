@@ -12,12 +12,7 @@
 <body>
 
   <!-- Announcement Bar -->
-  <div id="announcement-bar" class="respect-newlines">
-    Website has been relocated. If you find problmens with missing content, photos, or links, 
-    please email <a href="mailto:w5gad@w5gad.org"><strong>w5gad@w5gad.org</strong></a>.
-  See <a href="whatshappening.html"><strong>What's Happening calendar</strong></a> for upcoming events.
-    <button id="bar-close" aria-label="Dismiss announcement">&times;</button>
-  </div>
+  <div data-include="announcement.html"></div>
 
   <!-- Site Header -->
   <header id="site-header">
@@ -64,6 +59,11 @@
           <div class="carousel-wrapper"
               data-image-folder="images/carousels/ourclub"
               aria-label="Community photo slideshow">
+          </div>
+          
+          <div class="carousel-wrapper"
+              data-image-folder="images/carousels/history"
+              aria-label="History photo slideshow">
           </div> 
         </div>
 
@@ -97,6 +97,8 @@
             Saturdays from 9AM to noon. Check our
             <a href="whatshappening.html" class="text-link">events calendar</a> for details.
           </p>
+          <p class="hero-caption">photos at left above: today</p>
+          <p class="hero-caption">photos at left below: from the past SEVEN decades</p>
         </div>
 
       </div><!-- /.club-info-grid -->
@@ -131,9 +133,12 @@
                 Camaraderie
               </button>
               <div class="accordion-body">
-                <!-- PLACEHOLDER: Describe camaraderie benefits -->
-                Lorem ipsum &mdash; describe the social aspect of club membership,
-                friendships formed, and the welcoming community environment.
+                <ul>
+                  <li>Meet other amateur radio operators</li>
+                  <li>Learn about the latest technology and equipment</li>
+                  <li>Participate in contests and events</li>
+                  <li>Get involved in public service and emergency communications</li>
+                <ul>
               </div>
             </div>
 
@@ -143,9 +148,11 @@
                 Use Our Equipment
               </button>
               <div class="accordion-body">
-                <!-- PLACEHOLDER: Describe equipment access for members -->
-                Lorem ipsum &mdash; describe member access to HF rigs, VHF/UHF equipment,
-                digital modes, and the fully equipped shack at the clubhouse.
+                <ul>
+                  <li>Access to HF rigs, VHF/UHF equipment, and digital modes</li>
+                  <li>Fully equipped shack at the clubhouse</li>
+                  <li>Hands-on experience with a variety of transceivers and antennas</li>
+                <ul>
               </div>
             </div>
 
@@ -155,9 +162,10 @@
                 Support the Greater New Orleans Community
               </button>
               <div class="accordion-body">
-                <!-- PLACEHOLDER: Describe community service aspects -->
-                Lorem ipsum &mdash; describe ARES/RACES participation, public service
-                events, emergency communications support, and Scout merit badge assistance.
+                <ul>
+                  <li>Participate in public service events</li>
+                  <li>Support emergency communications</li>     
+                </ul>
               </div>
             </div>
 
@@ -167,9 +175,11 @@
                 Get Help and Mentoring
               </button>
               <div class="accordion-body">
-                <!-- PLACEHOLDER: Describe Elmer mentoring program -->
-                Lorem ipsum &mdash; describe the Elmer program, one-on-one mentoring
-                for new hams, study groups, and hands-on guidance from experienced operators.
+                <ul>
+                  <li>One-on-one mentoring from experienced hams</li>
+                  <li>Study groups for license exams</li>
+                  <li>Hands-on guidance and support</li>
+                </ul>
               </div>
             </div>
 
@@ -179,11 +189,12 @@
                 Contesting
               </button>
               <div class="accordion-body">
-                <!-- PLACEHOLDER: Describe contesting opportunities -->
-                Lorem ipsum &mdash; describe club-organized contest participation,
-                access to club station during contests, and the excitement of competitive
-                operating events.
-              </div>
+                <ul>
+                  <li>Participate in local, national, and international contests</li>
+                  <li>Access to club station during contests</li>
+                  <li>Learn contesting techniques and strategies from experienced operators</li>
+                </ul>
+            </div>
             </div>
           </div>
         </div>
@@ -200,9 +211,11 @@
                 Licensing
               </button>
               <div class="accordion-body">
-                <!-- PLACEHOLDER: Describe public license exam sessions -->
-                Lorem ipsum &mdash; describe open license exam sessions available to
-                the public, walk-in or scheduled testing, and what to expect.
+                <ul>
+                  <li>License training and examinations</li>
+                  <li>All-in-a-day license sessions</li>
+                  <li>Walk-in or scheduled testing</li>
+                </ul>
               </div>
             </div>
 
@@ -212,10 +225,11 @@
                 Repeaters and Gateways
               </button>
               <div class="accordion-body">
-                <!-- PLACEHOLDER: Describe public repeater/gateway access -->
-                Lorem ipsum &mdash; describe the repeaters and digital gateways (D-Star,
-                Winlink, Wires-X, Fusion) available to any licensed amateur in the
-                Greater New Orleans area.
+                <ul>
+                  <li>Access to repeaters and digital gateways (D-Star, Winlink, Wires-X, Fusion)</li>
+                  <li>Support for emergency communications</li>
+                  <li>Public education about amateur radio</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -231,22 +245,14 @@
       </div>
     </div>
     <!-- Membership CTA -->
-    <section class="membership-cta">
-      <h2>With an annual membership of just $36, you gain full access to our range of equipment and enjoy all the perks of being part of our community.</h2>
-      <a href="PLACEHOLDER_JOIN_URL" class="btn btn-black">Join Today</a>
-    </section>
+    
+    <div data-include="join.html"></div> 
 
   </main>
 
   <!-- Footer -->
-  <footer id="site-footer">
-    <span class="footer-copy">&copy; 2026 Jefferson Amateur Radio Club, Inc.</span>
-    <nav class="footer-social" aria-label="Social media links">
-      <a href="PLACEHOLDER_FACEBOOK_URL" target="_blank" rel="noopener">Facebook</a>
-      <span aria-hidden="true">&bull;</span>
-      <a href="PLACEHOLDER_YOUTUBE_URL" target="_blank" rel="noopener">Youtube</a>
-    </nav>
-  </footer>
+
+  <div data-include="footer.html"></div>
 
   <script src="js/main.js"></script>
   <script src="js/carousel-github.js"></script>

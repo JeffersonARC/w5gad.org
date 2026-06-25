@@ -12,12 +12,7 @@
 <body>
 
   <!-- Announcement Bar -->
-  <div id="announcement-bar" class="respect-newlines">
-    Website has been relocated. If you find problmens with missing content, photos, or links, 
-    please email <a href="mailto:w5gad@w5gad.org"><strong>w5gad@w5gad.org</strong></a>.
-  See <a href="whatshappening.html"><strong>What's Happening calendar</strong></a> for upcoming events.
-    <button id="bar-close" aria-label="Dismiss announcement">&times;</button>
-  </div>
+  <div data-include="announcement.html"></div>
 
   <!-- Site Header -->
   <header id="site-header">
@@ -99,9 +94,12 @@
             Our Club is a place to &hellip;
           </button>
           <div class="accordion-body">
-            <!-- PLACEHOLDER: Fill in text about what the club is a place to do -->
-            Lorem ipsum &mdash; describe what the club offers locally as a gathering place,
-            a place to learn, and a place to meet fellow hams.
+            <ul>
+              <li>Meet other amateur radio operators</li>
+              <li>Learn about the latest technology and equipment</li>
+              <li>Participate in contests and events</li>
+              <li>Get involved in public service and emergency communications</li>
+            </ul>
           </div>
         </div>
 
@@ -111,9 +109,12 @@
             We serve the Greater New Orleans area by providing &hellip;
           </button>
           <div class="accordion-body">
-            <!-- PLACEHOLDER: Fill in text about services to the Greater New Orleans area -->
-            Lorem ipsum &mdash; describe services such as repeaters, gateways, emergency
-            communication support, public education, and license testing.
+            <ul>
+              <li>Repeaters and gateways for VHF/UHF, D-Star, Winlink, Wires-X, Fusion, and others</li>
+              <li>Emergency communication support</li>
+              <li>Public education about amateur radio</li>
+              <li>License testing and training</li>
+            </ul> 
           </div>
         </div>
 
@@ -123,9 +124,12 @@
             Operators from all over the world offer &hellip;
           </button>
           <div class="accordion-body">
-            <!-- PLACEHOLDER: Fill in text about the global amateur radio community -->
-            Lorem ipsum &mdash; describe the global connections available through ham radio,
-            contests, DXpeditions, and international communication.
+            <ul>
+              <li>Contests and DXpeditions</li>
+              <li>International communication and cultural exchange</li>
+              <li>Opportunities to learn from experienced operators</li>
+              <li>Access to a global network of amateur radio enthusiasts</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -139,25 +143,14 @@
     </div><!-- /.page-content -->
 
     <!-- Membership CTA -->
-    <section class="membership-cta">
-      <h2>With an annual membership of just $36, you gain full access to our range of equipment and enjoy all the perks of being part of our community.</h2>
-      <a href="https://docs.google.com/document/d/1mHg7prZlHgCh9DUQFVDDpoh0xymSUyz4Y_p8f0ExDGA/edit?usp=drive_link" class="btn btn-black">Join Today</a>
-      <p class="cta-sub">
-        Learn more about membership benefits <a href="ourclub.html#membership" class="link-here">HERE</a>
-      </p>
-    </section>
+    
+    <div data-include="join.html"></div> 
 
   </main>
 
   <!-- Footer -->
-  <footer id="site-footer">
-    <span class="footer-copy">&copy; 2026 Jefferson Amateur Radio Club, Inc.</span>
-    <nav class="footer-social" aria-label="Social media links">
-      <a href="PLACEHOLDER_FACEBOOK_URL" target="_blank" rel="noopener">Facebook</a>
-      <span aria-hidden="true">&bull;</span>
-      <a href="PLACEHOLDER_YOUTUBE_URL" target="_blank" rel="noopener">Youtube</a>
-    </nav>
-  </footer>
+
+  <div data-include="footer.html"></div>
 
   <script src="js/main.js"></script>
   <script src="js/carousel-github.js"></script>
