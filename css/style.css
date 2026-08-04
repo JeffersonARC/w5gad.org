@@ -629,6 +629,18 @@ p:last-child { margin-bottom: 0; }
   padding: 50px 24px;
   margin-top: 0px;
   margin-bottom: 48px;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.membership-cta-left {
+  flex: 60;
+}
+
+.membership-cta-right {
+  flex: 40;
+  max-width: 300px;
 }
 .membership-cta h2 {
   max-width: 700px;
